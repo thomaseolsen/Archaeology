@@ -1,0 +1,17 @@
+/Users/to369r/Documents/GitHub/Archaeology/NotebookTests/obj/Debug/netcoreapp2.2/NotebookTests.csprojAssemblyReference.cache
+/Users/to369r/Documents/GitHub/Archaeology/NotebookTests/obj/Debug/netcoreapp2.2/NotebookTests.csproj.CoreCompileInputs.cache
+/Users/to369r/Documents/GitHub/Archaeology/NotebookTests/obj/Debug/netcoreapp2.2/NotebookTests.AssemblyInfoInputs.cache
+/Users/to369r/Documents/GitHub/Archaeology/NotebookTests/obj/Debug/netcoreapp2.2/NotebookTests.AssemblyInfo.cs
+/Users/to369r/Documents/GitHub/Archaeology/NotebookTests/bin/Debug/netcoreapp2.2/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/Users/to369r/Documents/GitHub/Archaeology/NotebookTests/bin/Debug/netcoreapp2.2/xunit.runner.reporters.netcoreapp10.dll
+/Users/to369r/Documents/GitHub/Archaeology/NotebookTests/bin/Debug/netcoreapp2.2/xunit.runner.utility.netcoreapp10.dll
+/Users/to369r/Documents/GitHub/Archaeology/NotebookTests/bin/Debug/netcoreapp2.2/NotebookTests.deps.json
+/Users/to369r/Documents/GitHub/Archaeology/NotebookTests/bin/Debug/netcoreapp2.2/NotebookTests.runtimeconfig.json
+/Users/to369r/Documents/GitHub/Archaeology/NotebookTests/bin/Debug/netcoreapp2.2/NotebookTests.runtimeconfig.dev.json
+/Users/to369r/Documents/GitHub/Archaeology/NotebookTests/bin/Debug/netcoreapp2.2/NotebookTests.dll
+/Users/to369r/Documents/GitHub/Archaeology/NotebookTests/bin/Debug/netcoreapp2.2/NotebookTests.pdb
+/Users/to369r/Documents/GitHub/Archaeology/NotebookTests/bin/Debug/netcoreapp2.2/NotebookLibrary.dll
+/Users/to369r/Documents/GitHub/Archaeology/NotebookTests/bin/Debug/netcoreapp2.2/NotebookLibrary.pdb
+/Users/to369r/Documents/GitHub/Archaeology/NotebookTests/obj/Debug/netcoreapp2.2/NotebookTests.csproj.CopyComplete
+/Users/to369r/Documents/GitHub/Archaeology/NotebookTests/obj/Debug/netcoreapp2.2/NotebookTests.dll
+/Users/to369r/Documents/GitHub/Archaeology/NotebookTests/obj/Debug/netcoreapp2.2/NotebookTests.pdb

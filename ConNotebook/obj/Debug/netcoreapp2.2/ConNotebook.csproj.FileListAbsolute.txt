@@ -1,0 +1,14 @@
+/Users/to369r/Documents/GitHub/Archaeology/ConNotebook/bin/Debug/netcoreapp2.2/ConNotebook.deps.json
+/Users/to369r/Documents/GitHub/Archaeology/ConNotebook/bin/Debug/netcoreapp2.2/ConNotebook.runtimeconfig.json
+/Users/to369r/Documents/GitHub/Archaeology/ConNotebook/bin/Debug/netcoreapp2.2/ConNotebook.runtimeconfig.dev.json
+/Users/to369r/Documents/GitHub/Archaeology/ConNotebook/bin/Debug/netcoreapp2.2/ConNotebook.dll
+/Users/to369r/Documents/GitHub/Archaeology/ConNotebook/bin/Debug/netcoreapp2.2/ConNotebook.pdb
+/Users/to369r/Documents/GitHub/Archaeology/ConNotebook/bin/Debug/netcoreapp2.2/NotebookLibrary.dll
+/Users/to369r/Documents/GitHub/Archaeology/ConNotebook/bin/Debug/netcoreapp2.2/NotebookLibrary.pdb
+/Users/to369r/Documents/GitHub/Archaeology/ConNotebook/obj/Debug/netcoreapp2.2/ConNotebook.csprojAssemblyReference.cache
+/Users/to369r/Documents/GitHub/Archaeology/ConNotebook/obj/Debug/netcoreapp2.2/ConNotebook.csproj.CoreCompileInputs.cache
+/Users/to369r/Documents/GitHub/Archaeology/ConNotebook/obj/Debug/netcoreapp2.2/ConNotebook.AssemblyInfoInputs.cache
+/Users/to369r/Documents/GitHub/Archaeology/ConNotebook/obj/Debug/netcoreapp2.2/ConNotebook.AssemblyInfo.cs
+/Users/to369r/Documents/GitHub/Archaeology/ConNotebook/obj/Debug/netcoreapp2.2/ConNotebook.csproj.CopyComplete
+/Users/to369r/Documents/GitHub/Archaeology/ConNotebook/obj/Debug/netcoreapp2.2/ConNotebook.dll
+/Users/to369r/Documents/GitHub/Archaeology/ConNotebook/obj/Debug/netcoreapp2.2/ConNotebook.pdb
