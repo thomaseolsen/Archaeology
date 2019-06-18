@@ -68,7 +68,7 @@ CREATE TABLE dbo.[LstArchitecturalMaterialQualifier] (
   [Description] NVARCHAR(25)  NOT NULL  DEFAULT ('')
 )
 
-PRINT('Inserting 13 values into LstArchitecturalMaterialQualifier')
+PRINT('Inserting 12 values into LstArchitecturalMaterialQualifier')
 INSERT INTO dbo.[LstArchitecturalMaterialQualifier]([Description])
 VALUES ('None'),
        ('Hard'),
@@ -273,7 +273,7 @@ VALUES (''),
 PRINT('Creating LstEarthTexture')
 CREATE TABLE dbo.[LstEarthTexture] (
   [ID]          TINYINT       NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
-  [Description] NVARCHAR(25)  NOT NULL  DEFAULT ('')
+  [Description] NVARCHAR(50)  NOT NULL  DEFAULT ('')
 )
 
 PRINT('Inserting 5 rows into LstEarthTexture')
@@ -663,7 +663,7 @@ VALUES (     '',    '',     '', ''),
 PRINT('Creating LstStratigraphicRelationship')
 CREATE TABLE dbo.[LstStratigraphicRelationship] (
   [ID]            TINYINT       NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
-  [Description]   NVARCHAR(25)  NOT NULL  DEFAULT (''),
+  [Description]   NVARCHAR(50)  NOT NULL  DEFAULT (''),
   [Architectural] BIT           NOT NULL  DEFAULT ((0)),
   [Earth]         BIT           NOT NULL  DEFAULT ((0)),
   [Installation]  BIT           NOT NULL  DEFAULT ((0))
@@ -671,20 +671,20 @@ CREATE TABLE dbo.[LstStratigraphicRelationship] (
 
 PRINT('Inserting 14 values into LstStratigraphicRelationship')
 INSERT INTO dbo.[LstStratigraphicRelationship]([Description], [Architectural], [Earth], [Installation])
-VALUES ('', 1, 1, 1),
-       ('Under', 1, 1, 1),
-       ('Over', 1, 1, 1),
-       ('Equals', 1, 1, 1),
-       ('Contiguous To', 1, 0, 1),
-       ('Seals Against', 1, 0, 1),
-       ('Cut By', 1, 1, 1),
+VALUES ('',                             1, 1, 1),
+       ('Under',                        1, 1, 1),
+       ('Over',                         1, 1, 1),
+       ('Equals',                       1, 1, 1),
+       ('Contiguous To',                1, 0, 1),
+       ('Seals Against',                1, 0, 1),
+       ('Cut By',                       1, 1, 1),
        ('Associated Foundation Trench', 0, 1, 0),
-       ('Cuts', 0, 1, 1),
-       ('Abuts', 0, 1, 0),
-       ('Abutted By', 0, 1, 0),
-       ('Sealed Against By', 0, 1, 0),
-       ('Bonded To', 0, 1, 0),
-       ('Fill Loci', 0, 0, 1)
+       ('Cuts',                         0, 1, 1),
+       ('Abuts',                        0, 1, 0),
+       ('Abutted By',                   0, 1, 0),
+       ('Sealed Against By',            0, 1, 0),
+       ('Bonded To',                    0, 1, 0),
+       ('Fill Loci',                    0, 0, 1)
 
 /*
 * 
