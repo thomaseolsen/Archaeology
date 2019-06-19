@@ -2,14 +2,40 @@ using NotebookLibrary;
 using System;
 using Xunit;
 
-namespace NotebookTests
+namespace LibraryTests
 {
-    public class LibraryTests
+    public class DataStoreInfoTests
     {
+        DataStoreInfo dataStore;
+        public DataStoreInfoTests() {
+            dataStore = new DataStoreInfo();
+        }
+
+        public void Dispose() {
+            // Dispose of common setup code
+        }
+
         [Fact]
-        public void TestThing()
-        {
-            Assert.Equal(42, new Thing().Get(19,23));
+        public void GetSetServerAddressTest() {
+            dataStore.ServerAddress = "localhost";
+            Assert.Equal("localhost", dataStore.ServerAddress);
+        }
+
+        [Fact]
+        public void GetSetServerUsernameTest() {
+            dataStore.ServerUsername = "sa";
+            Assert.Equal("sa", dataStore.ServerUsername);
+        }
+
+        [Fact]
+        public void GetSetServerPasswordTest() {
+            dataStore.ServerPassword = "Admin.P@ssw0rd";
+            Assert.Equal("Admin.P@ssw0rd", dataStore.ServerPassword);
+        }
+
+        [Fact]
+        public void SaveDataStoreInfoTest() {
+            Assert.Equal(1, 0);
         }
     }
 }

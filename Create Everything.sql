@@ -22,30 +22,90 @@ CREATE TABLE dbo.[LstArchitecturalConstructionStyle] (
   [Description] NVARCHAR(25)  NOT NULL  DEFAULT ('')
 )
 
+PRINT('INSERTING 10 values into LstArchitecturalConstructionStyle')
+INSERT INTO dbo.[LstArchitecturalConstructionStyle]([Description])
+VALUES (''),
+       ('Boulder & Chink'),
+       ('Ashlar Fit'),
+       ('Header-stretcher'),
+       ('Rubble-filled'),
+       ('Rubble'),
+       ('Stacked Bricks'),
+       ('Tied-in Bricks'),
+       ('Quoin & Pier'),
+       ('Orthostat')
+
+PRINT('Creating LstArchitecturalConstructionSupport')
 CREATE TABLE dbo.[LstArchitecturalConstructionSupport] (
   [ID]          TINYINT       NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
   [Description] NVARCHAR(25)  NOT NULL  DEFAULT ('')
 )
 
+PRINT('Inserting 5 values into LstArchitecturalConstructionSupport')
+INSERT INTO dbo.[LstArchitecturalConstructionSupport]([Description])
+VALUES (''),
+       ('Free-standing'),
+       ('Buttressed'),
+       ('Battered'),
+       ('Foundation')
+
+PRINT('Creating LstArchitecturalDressing')
 CREATE TABLE dbo.[LstArchitecturalDressing] (
   [ID]          TINYINT       NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
   [Description] NVARCHAR(25)  NOT NULL  DEFAULT ('')
 )
 
+PRINT('Inserting 6 values into LstArchitecturalDressing')
+INSERT INTO dbo.[LstArchitecturalDressing]([Description])
+VALUES (''),
+       ('Unhewn'),
+       ('Semi-hewn'),
+       ('Dressed'),
+       ('Ashlar'),
+       ('Bossed')
+
+PRINT('Creating LstArchitecturalFacing')
 CREATE TABLE dbo.[LstArchitecturalFacing] (
   [ID]          TINYINT       NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
   [Description] NVARCHAR(25)  NOT NULL  DEFAULT ('')
 )
 
+PRINT('Inserting 5 values into LstArchitecturalFacing')
+INSERT INTO dbo.[LstArchitecturalFacing]([Description])
+VALUES (''),
+       ('Unfaced'),
+       ('Plaster'),
+       ('Mud'),
+       ('Paint')
+
+PRINT('Creating LstArchitecturalMasonry')
 CREATE TABLE dbo.[LstArchitecturalMasonry] (
   [ID]          TINYINT       NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
   [Description] NVARCHAR(25)  NOT NULL  DEFAULT ('')
 )
 
+PRINT('Inserting 4 values into LstArchitecturalMasonry')
+INSERT INTO dbo.[LstArchitecturalMasonry]([Description])
+VALUES (''),
+       ('Wall Stones'),
+       ('Chinkstones'),
+       ('Fillstones'),
+       ('Brick')
+
+PRINT('Creating LstArchitecturalMasonryStones')
 CREATE TABLE dbo.[LstArchitecturalMasonryStones] (
   [ID]          TINYINT       NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
   [Description] NVARCHAR(25)  NOT NULL  DEFAULT ('')
 )
+
+PRINT('Inserting 6 values into LstArchitecturalMasonryStones')
+INSERT INTO dbo.[LstArchitecturalMasonryStones]([Description])
+VALUES (''),
+       ('Cobble (6 - 25cm'),
+       ('Small Boulder (25 - 50cm'),
+       ('Medium Boulder (50 - 75cm'),
+       ('Large Boulder (75 - 100cm'),
+       ('Very Large Boulder (>1m)')
 
 PRINT('Creating LstArchitecturalMaterial')
 CREATE TABLE dbo.[LstArchitecturalMaterial] (
@@ -83,20 +143,38 @@ VALUES ('None'),
        ('Unbaked'),
        ('Burned')
 
+PRINT('Creating LstArchitecturalMortar')
 CREATE TABLE dbo.[LstArchitecturalMortar] (
   [ID]          TINYINT       NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
   [Description] NVARCHAR(25)  NOT NULL  DEFAULT ('')
 )
 
+PRINT('Inserting 7 values into LstArchitecturalMortar')
+INSERT INTO dbo.[LstArchitecturalMortar]([Description])
+VALUES (''),
+       ('Dry-laid'),
+       ('Clay'),
+       ('Mud'),
+       ('Cement'),
+       ('Plaster'),
+       ('Lime')
+
+PRINT('Creating LstArchitecturalPreservation')
 CREATE TABLE dbo.[LstArchitecturalPreservation] (
   [ID]          TINYINT       NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
-  [Description] NVARCHAR(25)  NOT NULL  DEFAULT ('')
+  [Description] NVARCHAR(50)  NOT NULL  DEFAULT ('')
 )
 
-CREATE TABLE dbo.[LstDressingType] (
-  [ID]          TINYINT       NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
-  [Description] NVARCHAR(25)  NOT NULL  DEFAULT ('')
-)
+PRINT('Inserting 8 values into LstArchitecturalPreservation')
+INSERT INTO dbo.[LstArchitecturalPreservation]([Description])
+VALUES (''),
+       ('Complete'),
+       ('Partial Superstructure: Most'),
+       ('Partial Superstructure: Half'),
+       ('Partial Superstructure: Little'),
+       ('Foundation Only: Complete'),
+       ('Foundation Only: Partial'),
+       ('Robbed')
 
 PRINT('Creating LstEarthConsistenceCompactness')
 CREATE TABLE dbo.[LstEarthConsistenceCompactness] (
@@ -284,30 +362,113 @@ VALUES (''),
        ('Sandy Clay Loam - Silty Clay Loam'),
        ('Clay')
 
+PRINT('Creating LstInstallationMaterial')
 CREATE TABLE dbo.[LstInstallationMaterial] (
   [ID]          TINYINT       NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
   [Description] NVARCHAR(25)  NOT NULL  DEFAULT ('')
 )
 
+PRINT('Inserting 10 values into LstInstallationMaterial')
+INSERT INTO dbo.[LstInstallationMaterial]([Description])
+VALUES (''),
+       ('Limestone'),
+       ('Chert'),
+       ('Ceramic'),
+       ('Mud'),
+       ('Mudbrick'),
+       ('Basalt'),
+       ('Plaster'),
+       ('Earth'),
+       ('Stone'),
+       ('Nari')
+
+PRINT('Creating LstInstallationMaterialQualifier')
 CREATE TABLE dbo.[LstInstallationMaterialQualifier] (
   [ID]          TINYINT       NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
   [Description] NVARCHAR(25)  NOT NULL  DEFAULT ('')
 )
 
+PRINT('Inserting 12 values into LstInstallationMaterialQualifier')
+INSERT INTO dbo.[LstInstallationMaterialQualifier]([Description])
+VALUES ('None'),
+       ('Hard'),
+       ('Soft'),
+       ('Cherty'),
+       ('Fossiliferous'),
+       ('Decayed'),
+       ('Freshly-quarried'),
+       ('Reused'),
+       ('Oven-baked'),
+       ('Sun-baked'),
+       ('Unbaked'),
+       ('Burned')
+
+PRINT('Creating LstInstallationPlan')
 CREATE TABLE dbo.[LstInstallationPlan] (
   [ID]          TINYINT       NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
   [Description] NVARCHAR(25)  NOT NULL  DEFAULT ('')
 )
 
+PRINT('Inserting 9 values into LstInstallationPlan')
+INSERT INTO dbo.[LstInstallationPlan]([Description])
+VALUES (''),
+       ('Linear'),
+       ('Curvilinear'),
+       ('Rectangular'),
+       ('Triangular'),
+       ('Circular'),
+       ('Semi-circular'),
+       ('Oval'),
+       ('Irregular')
+
+PRINT('Creating LstInstallationPlanQualifier')
 CREATE TABLE dbo.[LstInstallationPlanQualifier] (
   [ID]          TINYINT       NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
   [Description] NVARCHAR(25)  NOT NULL  DEFAULT ('')
 )
 
+PRINT('Inserting 5 values into LstInstallationPlanQualifier')
+INSERT INTO dbo.[LstInstallationPlanQualifier]([Description])
+VALUES ('None'),
+       ('Rounded'),
+       ('Squared'),
+       ('Nearly'),
+       ('Slightly')
+
+PRINT('Creating LstInstallationType')
 CREATE TABLE dbo.[LstInstallationType] (
   [ID]          TINYINT       NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
   [Description] NVARCHAR(25)  NOT NULL  DEFAULT ('')
 )
+
+PRINT('Inserting 13 values into LstInstallationType')
+INSERT INTO dbo.[LstInstallationType]([Description])
+VALUES (''),
+       ('Pit'),
+       ('Silo'),
+       ('Bin'),
+       ('Kiln'),
+       ('Tabun'),
+       ('Cistern'),
+       ('Reservoir'),
+       ('Burial'),
+       ('Pavement'),
+       ('Foundation Trench'),
+       ('Robber Trench'),
+       ('Unknown')
+
+PRINT('Creating LstInstallationTypeCertainty')
+CREATE TABLE dbo.[LstInstallationTypeCertainty] (
+  [ID]          TINYINT       NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
+  [Description] NVARCHAR(25)  NOT NULL  DEFAULT ('')
+)
+
+PRINT('Inserting 4 values into LstInstallationTypeCertainty')
+INSERT INTO dbo.[LstInstallationTypeCertainty]([Description])
+VALUES (''),
+       ('Certain'),
+       ('Probable'),
+       ('Possible')
 
 PRINT('Creating LstLocusSeparationClarity')
 CREATE TABLE dbo.[LstLocusSeparationClarity] (
@@ -843,6 +1004,7 @@ CREATE TABLE dbo.[LocusDescriptionArchitectureMortar] (
       UNIQUE([LocusDescriptionArchitectureID], [ArchitecturalMortarID])
     FOREIGN KEY ([ArchitecturalMortarID]) REFERENCES [LstArchitecturalMortar]([ID]),
   [Percentage]                      TINYINT           NOT NULL  DEFAULT ((0)),
+  [AverageThickness]                TINYINT           NOT NULL  DEFAULT ((0)),
   [Remarks]                         NVARCHAR(250)     NOT NULL  DEFAULT ('')
 )
 
@@ -855,6 +1017,8 @@ CREATE TABLE dbo.[LocusDescriptionArchitectureFacing] (
       UNIQUE([LocusDescriptionArchitectureID], [ArchitecturalFacingID])
     FOREIGN KEY ([ArchitecturalFacingID]) REFERENCES [LstArchitecturalFacing]([ID]),
   [Percentage]                      TINYINT           NOT NULL  DEFAULT ((0)),
+  [MunselNumberID]                  SMALLINT          NOT NULL  DEFAULT ((0))
+    FOREIGN KEY ([MunselNumberID]) REFERENCES [LstMunsellNumber]([ID]),
   [Remarks]                         NVARCHAR(250)     NOT NULL  DEFAULT ('')
 )
 
@@ -952,6 +1116,8 @@ CREATE TABLE dbo.[LocusDescriptionInstallation] (
     FOREIGN KEY ([LocusID]) REFERENCES [Locus]([ID]),
   [InstallationTypeID] TINYINT NOT NULL DEFAULT ((0))
     FOREIGN KEY ([InstallationTypeID]) REFERENCES [LstInstallationType]([ID]),
+  [InstallationTypeCertaintyID] TINYINT NOT NULL DEFAULT ((0))
+    FOREIGN KEY ([InstallationTypeCertaintyID]) REFERENCES [LstInstallationTypeCertainty]([ID]),
   [InstallationPlanID] TINYINT NOT NULL DEFAULT ((0))
     FOREIGN KEY ([InstallationPlanID]) REFERENCES [LstInstallationPlan]([ID]),
   [InstallationPlanQualifierID] TINYINT NOT NULL DEFAULT ((0))
