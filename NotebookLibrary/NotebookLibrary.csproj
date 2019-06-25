@@ -6,12 +6,13 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.netTopologySuite" Version="2.2.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.4">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
-    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.2.4">
     <PackageReference Include="Microsoft.XmlSerializer.Generator" Version="2.0.0" />
+    <DotNetCliToolReference Include="Microsoft.XmlSerializer.Generator" Version="2.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
   </ItemGroup>
 

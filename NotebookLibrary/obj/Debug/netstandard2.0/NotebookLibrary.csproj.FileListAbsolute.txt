@@ -3,6 +3,7 @@
 /Users/to369r/Documents/GitHub/Archaeology/NotebookLibrary/bin/Debug/netstandard2.0/NotebookLibrary.pdb
 /Users/to369r/Documents/GitHub/Archaeology/NotebookLibrary/obj/Debug/netstandard2.0/NotebookLibrary.csprojAssemblyReference.cache
 /Users/to369r/Documents/GitHub/Archaeology/NotebookLibrary/obj/Debug/netstandard2.0/NotebookLibrary.csproj.CoreCompileInputs.cache
+/Users/to369r/Documents/GitHub/Archaeology/NotebookLibrary/obj/Debug/netstandard2.0/EFCoreSqlServerNetTopologySuite.cs
 /Users/to369r/Documents/GitHub/Archaeology/NotebookLibrary/obj/Debug/netstandard2.0/NotebookLibrary.AssemblyInfoInputs.cache
 /Users/to369r/Documents/GitHub/Archaeology/NotebookLibrary/obj/Debug/netstandard2.0/NotebookLibrary.AssemblyInfo.cs
 /Users/to369r/Documents/GitHub/Archaeology/NotebookLibrary/obj/Debug/netstandard2.0/NotebookLibrary.dll

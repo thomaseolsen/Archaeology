@@ -6,5 +6,6 @@
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="/usr/local/share/dotnet/sdk/NuGetFallbackFolder/netstandard.library/2.0.3/build/netstandard2.0/NETStandard.Library.targets" Condition="Exists('/usr/local/share/dotnet/sdk/NuGetFallbackFolder/netstandard.library/2.0.3/build/netstandard2.0/NETStandard.Library.targets')" />
     <Import Project="$(NuGetPackageRoot)microsoft.xmlserializer.generator/2.0.0/build/Microsoft.XmlSerializer.Generator.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.xmlserializer.generator/2.0.0/build/Microsoft.XmlSerializer.Generator.targets')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore.sqlserver.nettopologysuite/2.2.4/build/netstandard2.0/Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore.sqlserver.nettopologysuite/2.2.4/build/netstandard2.0/Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite.targets')" />
   </ImportGroup>
 </Project>
