@@ -30,3 +30,7 @@ SELECT * FROM [Supervisor]
 -- INSERT INTO [Square]
 -- VALUES ('550f69a7-10c9-44f1-846d-e7484188cdca', 'b902fcba-a701-425d-a694-ae9505d366eb', 'Ab123', '537383c4-59e3-44af-a264-ed3d3b58f876', null)
 SELECT * FROM [Square]
+
+-- INSERT INTO [Locus]
+-- VALUES ('21385a91-ef2e-494d-8c0b-50fddcf322c0', '550f69a7-10c9-44f1-846d-e7484188cdca', 77, '2011-06-08', null, 'Started something new', 'She was beautiful', 1, 'Still working out the funciton', 'The stratigraphy just continues to grow', 1, 'IA2', 'Phase?', 'Seven')
+SELECT * FROM [Locus]
