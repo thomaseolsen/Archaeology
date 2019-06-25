@@ -9,5 +9,7 @@ namespace NotebookLibrary.Models
         public string ShortName { get; set; }
         public string FullName { get; set; }
         public string PublicationName { get; set; }
+
+        public virtual ICollection<Area> Area { get; set; }
     }
 }

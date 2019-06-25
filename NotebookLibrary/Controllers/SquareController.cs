@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using NotebookLibrary.Models;
 using System;
 using System.Collections.Generic;
@@ -5,13 +6,15 @@ using System.Linq;
 
 namespace NotebookLibrary.Controllers
 {
-    public class SiteController
+    public class SquareController
     {
-      public List<Site> readSites() {
-        var retVal = new List<Site>();
+      public List<Square> readSquares() {
+        var retVal = new List<Square>();
         try {
           using (var context = new ArchaeologyContext()) {
-            retVal = context.Site
+            retVal = context.Square
+                            .Include(square => square.Area)
+                            .Include(square => square.Supervisor)
                             .ToList();
           }
         }
@@ -21,13 +24,15 @@ namespace NotebookLibrary.Controllers
         return retVal;
       }
 
-      public Site readSite(Guid id) {
-        var retList = new List<Site>();
-        var retVal = new Site();
+      public Square readSquare(Guid id) {
+        var retList = new List<Square>();
+        var retVal = new Square();
         try {
           using (var context = new ArchaeologyContext()) {
-            retList = context.Site
-                             .Where(s => s.Id == id)
+            retList = context.Square
+                             .Include(square => square.Area)
+                             .Include(square => square.Supervisor)
+                             .Where(square => square.Id == id)
                              .ToList();
           }
         }
@@ -40,10 +45,10 @@ namespace NotebookLibrary.Controllers
         return retVal;
       }
 
-      public bool createSite(Site site) {
+      public bool createSquare(Square square) {
         try {
           using (var context = new ArchaeologyContext()) {
-            context.Site.Add(site);
+            context.Square.Add(square);
             context.SaveChanges();
           }
         }
@@ -53,10 +58,10 @@ namespace NotebookLibrary.Controllers
         return true;
       }
 
-      public bool updateSite(Site site) {
+      public bool updateSquare(Square square) {
         try {
           using (var context = new ArchaeologyContext()) {
-            context.Site.Update(site);
+            context.Square.Update(square);
             context.SaveChanges();
           }
         }
@@ -66,10 +71,10 @@ namespace NotebookLibrary.Controllers
         return true;
       }
 
-      public bool deleteSite(Site site) {
+      public bool deleteSquare(Square square) {
         try {
           using (var context = new ArchaeologyContext()) {
-            context.Remove(site);
+            context.Remove(square);
             context.SaveChanges();
           }
         }

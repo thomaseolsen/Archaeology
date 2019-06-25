@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using NotebookLibrary.Models;
 using System;
 using System.Collections.Generic;
@@ -5,13 +6,14 @@ using System.Linq;
 
 namespace NotebookLibrary.Controllers
 {
-    public class SiteController
+    public class SupervisorController
     {
-      public List<Site> readSites() {
-        var retVal = new List<Site>();
+      public List<Supervisor> readSupervisors() {
+        var retVal = new List<Supervisor>();
         try {
           using (var context = new ArchaeologyContext()) {
-            retVal = context.Site
+            retVal = context.Supervisor
+                            .Include(supervisor => supervisor.Team)
                             .ToList();
           }
         }
@@ -21,13 +23,14 @@ namespace NotebookLibrary.Controllers
         return retVal;
       }
 
-      public Site readSite(Guid id) {
-        var retList = new List<Site>();
-        var retVal = new Site();
+      public Supervisor readSupervisor(Guid id) {
+        var retList = new List<Supervisor>();
+        var retVal = new Supervisor();
         try {
           using (var context = new ArchaeologyContext()) {
-            retList = context.Site
-                             .Where(s => s.Id == id)
+            retList = context.Supervisor
+                             .Include(supervisor => supervisor.Team)
+                             .Where(supervisor => supervisor.Id == id)
                              .ToList();
           }
         }
@@ -40,10 +43,10 @@ namespace NotebookLibrary.Controllers
         return retVal;
       }
 
-      public bool createSite(Site site) {
+      public bool createSupervisor(Supervisor supervisor) {
         try {
           using (var context = new ArchaeologyContext()) {
-            context.Site.Add(site);
+            context.Supervisor.Add(supervisor);
             context.SaveChanges();
           }
         }
@@ -53,10 +56,10 @@ namespace NotebookLibrary.Controllers
         return true;
       }
 
-      public bool updateSite(Site site) {
+      public bool updateSupervisor(Supervisor supervisor) {
         try {
           using (var context = new ArchaeologyContext()) {
-            context.Site.Update(site);
+            context.Supervisor.Update(supervisor);
             context.SaveChanges();
           }
         }
@@ -66,10 +69,10 @@ namespace NotebookLibrary.Controllers
         return true;
       }
 
-      public bool deleteSite(Site site) {
+      public bool deleteSupervisor(Supervisor supervisor) {
         try {
           using (var context = new ArchaeologyContext()) {
-            context.Remove(site);
+            context.Remove(supervisor);
             context.SaveChanges();
           }
         }
