@@ -11,9 +11,12 @@ namespace NotebookLibrary.Models
         }
 
         public Guid Id { get; set; }
+        public Guid SiteId { get; set; }
         public string Name { get; set; }
         public string Objective { get; set; }
 
+        public virtual Site Site { get; set; }
+        public virtual ICollection<Square> Square { get; set; }
         public virtual ICollection<AscAreaTeam> AscAreaTeam { get; set; }
     }
 }

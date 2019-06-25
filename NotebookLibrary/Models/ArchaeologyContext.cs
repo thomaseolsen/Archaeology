@@ -95,6 +95,12 @@ namespace NotebookLibrary.Models
                     .HasColumnName("ID")
                     .HasDefaultValueSql("(newid())");
 
+                entity.HasOne(d => d.Site)
+                    .WithMany(p => p.Area)
+                    .HasForeignKey(d => d.SiteId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK__Area__SiteID__06CD04F7");
+
                 entity.Property(e => e.Name)
                     .IsRequired()
                     .HasMaxLength(50)
@@ -1618,6 +1624,12 @@ namespace NotebookLibrary.Models
                 entity.Property(e => e.Id)
                     .HasColumnName("ID")
                     .HasDefaultValueSql("(newid())");
+
+                entity.HasOne(d => d.Area)
+                    .WithMany(p => p.Square)
+                    .HasForeignKey(d => d.AreaId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK__Square__AreaID__1DB06A4F");
 
                 entity.Property(e => e.Name)
                     .IsRequired()
