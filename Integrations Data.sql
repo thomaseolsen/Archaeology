@@ -34,3 +34,15 @@ SELECT * FROM [Square]
 -- INSERT INTO [Locus]
 -- VALUES ('21385a91-ef2e-494d-8c0b-50fddcf322c0', '550f69a7-10c9-44f1-846d-e7484188cdca', 77, '2011-06-08', null, 'Started something new', 'She was beautiful', 1, 'Still working out the funciton', 'The stratigraphy just continues to grow', 1, 'IA2', 'Phase?', 'Seven')
 SELECT * FROM [Locus]
+
+-- INSERT INTO [GeospatialData]
+-- VALUES ('17cd91d4-d1fb-4ac9-96e3-83e661e4ff00', 7777, NULL, NULL, NULL)
+SELECT * FROM [GeospatialData]
+
+-- INSERT INTO [Object]
+-- VALUES ('c4ceff30-11c0-450c-9eb5-333982648af4', '21385a91-ef2e-494d-8c0b-50fddcf322c0', 123, '2011-07-04', '17cd91d4-d1fb-4ac9-96e3-83e661e4ff00', 1, 0, 'Cultic Object')
+SELECT * FROM [Object]
+
+-- INSERT INTO [PotteryBucket]
+-- VALUES ('46457623-dcb4-4e69-8c2a-a6d03430b62f', '21385a91-ef2e-494d-8c0b-50fddcf322c0', 122, '2011-07-04', '17cd91d4-d1fb-4ac9-96e3-83e661e4ff00', 55, 3, 4, 2, 1, 'IA2B, Restorable, AK')
+SELECT * FROM [PotteryBucket]

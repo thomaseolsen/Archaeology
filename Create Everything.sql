@@ -1264,7 +1264,7 @@ CREATE TABLE dbo.[PotteryBucket] (
     FOREIGN KEY ([LocusID]) REFERENCES [Locus]([ID]),
   [Number]            INTEGER           NOT NULL  DEFAULT ((0)),
   [DateFilled]        DATE              NOT NULL  DEFAULT GETDATE(),
-  [GeospatialDataID]  UNIQUEIDENTIFIER  NOT NULL
+  [GeospatialDataID]  UNIQUEIDENTIFIER  NULL
     FOREIGN KEY ([GeospatialDataID]) REFERENCES [GeospatialData]([ID]),
   [CountTotal]        INTEGER           NOT NULL  DEFAULT ((0)),
   [CountRims]         INTEGER           NOT NULL  DEFAULT ((0)),
@@ -1280,7 +1280,7 @@ CREATE TABLE dbo.[Object] (
     FOREIGN KEY ([LocusID]) REFERENCES [Locus]([ID]),
   [Number]            INTEGER           NOT NULL  DEFAULT ((0)),
   [DateCollected]     DATE              NOT NULL  DEFAULT GETDATE(),
-  [GeospatialDataID]  UNIQUEIDENTIFIER  NOT NULL
+  [GeospatialDataID]  UNIQUEIDENTIFIER  NULL
     FOREIGN KEY ([GeospatialDataID]) REFERENCES [GeospatialData]([ID]),
   [CountTotal]        INTEGER           NOT NULL  DEFAULT ((1)),
   [LeftInField]       BIT               NOT NULL  DEFAULT ((0)),

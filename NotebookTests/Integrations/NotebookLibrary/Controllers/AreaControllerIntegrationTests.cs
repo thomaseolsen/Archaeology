@@ -4,7 +4,7 @@ using System;
 using System.Linq;
 using Xunit;
 
-namespace NotebookTests.Integrations.NotebookLibrary.Controllers
+namespace NotebookTests.Integrations.NotebookLib.Controllers
 {
     public class AreaControllerIntegrationTests : IDisposable
     {

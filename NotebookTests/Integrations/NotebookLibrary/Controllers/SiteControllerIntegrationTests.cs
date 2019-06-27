@@ -3,7 +3,7 @@ using NotebookLibrary.Models;
 using System;
 using Xunit;
 
-namespace NotebookTests.Integrations.NotebookLibrary.Controllers
+namespace NotebookTests.Integrations.NotebookLib.Controllers
 {
     public class SiteControllerIntegrationTests : IDisposable
     {
