@@ -2,7 +2,7 @@ using NotebookLibrary;
 using System;
 using Xunit;
 
-namespace LibraryTests.Units.NotebookLibrary
+namespace NotebookTests.Units.NotebookLibrary
 {
     public class DataStoreInfoTests : IDisposable
     {

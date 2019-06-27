@@ -1331,50 +1331,50 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
         protected override void InitCallbacks() {
         }
 
-        string id21_ServerPassword;
-        string id9_LocusController;
-        string id16_Id;
         string id15_TeamController;
-        string id10_ObjectController;
-        string id18_Database;
-        string id6_Item;
-        string id4_Thing;
-        string id19_ServerAddress;
         string id3_DataStoreInfo;
-        string id5_LstInstallationMaterial;
+        string id16_Id;
+        string id9_LocusController;
+        string id19_ServerAddress;
         string id13_SquareController;
-        string id17_Description;
-        string id7_AreaController;
+        string id21_ServerPassword;
         string id14_SupervisorController;
-        string id1_XmlHelper;
+        string id7_AreaController;
+        string id4_Thing;
         string id11_PotteryBucketController;
+        string id17_Description;
+        string id8_GeospatialDataController;
+        string id10_ObjectController;
+        string id6_Item;
+        string id1_XmlHelper;
+        string id12_SiteController;
+        string id18_Database;
         string id20_ServerUsername;
         string id2_Item;
-        string id12_SiteController;
-        string id8_GeospatialDataController;
+        string id5_LstInstallationMaterial;
 
         protected override void InitIDs() {
-            id21_ServerPassword = Reader.NameTable.Add(@"ServerPassword");
-            id9_LocusController = Reader.NameTable.Add(@"LocusController");
-            id16_Id = Reader.NameTable.Add(@"Id");
             id15_TeamController = Reader.NameTable.Add(@"TeamController");
-            id10_ObjectController = Reader.NameTable.Add(@"ObjectController");
-            id18_Database = Reader.NameTable.Add(@"Database");
-            id6_Item = Reader.NameTable.Add(@"LstInstallationMaterialQualifier");
-            id4_Thing = Reader.NameTable.Add(@"Thing");
-            id19_ServerAddress = Reader.NameTable.Add(@"ServerAddress");
             id3_DataStoreInfo = Reader.NameTable.Add(@"DataStoreInfo");
-            id5_LstInstallationMaterial = Reader.NameTable.Add(@"LstInstallationMaterial");
+            id16_Id = Reader.NameTable.Add(@"Id");
+            id9_LocusController = Reader.NameTable.Add(@"LocusController");
+            id19_ServerAddress = Reader.NameTable.Add(@"ServerAddress");
             id13_SquareController = Reader.NameTable.Add(@"SquareController");
-            id17_Description = Reader.NameTable.Add(@"Description");
-            id7_AreaController = Reader.NameTable.Add(@"AreaController");
+            id21_ServerPassword = Reader.NameTable.Add(@"ServerPassword");
             id14_SupervisorController = Reader.NameTable.Add(@"SupervisorController");
-            id1_XmlHelper = Reader.NameTable.Add(@"XmlHelper");
+            id7_AreaController = Reader.NameTable.Add(@"AreaController");
+            id4_Thing = Reader.NameTable.Add(@"Thing");
             id11_PotteryBucketController = Reader.NameTable.Add(@"PotteryBucketController");
+            id17_Description = Reader.NameTable.Add(@"Description");
+            id8_GeospatialDataController = Reader.NameTable.Add(@"GeospatialDataController");
+            id10_ObjectController = Reader.NameTable.Add(@"ObjectController");
+            id6_Item = Reader.NameTable.Add(@"LstInstallationMaterialQualifier");
+            id1_XmlHelper = Reader.NameTable.Add(@"XmlHelper");
+            id12_SiteController = Reader.NameTable.Add(@"SiteController");
+            id18_Database = Reader.NameTable.Add(@"Database");
             id20_ServerUsername = Reader.NameTable.Add(@"ServerUsername");
             id2_Item = Reader.NameTable.Add(@"");
-            id12_SiteController = Reader.NameTable.Add(@"SiteController");
-            id8_GeospatialDataController = Reader.NameTable.Add(@"GeospatialDataController");
+            id5_LstInstallationMaterial = Reader.NameTable.Add(@"LstInstallationMaterial");
         }
     }
 
@@ -1653,20 +1653,20 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             get {
                 if (typedSerializers == null) {
                     System.Collections.Hashtable _tmp = new System.Collections.Hashtable();
-                    _tmp.Add(@"NotebookLibrary.DataStoreInfo::", new DataStoreInfoSerializer());
                     _tmp.Add(@"NotebookLibrary.Controllers.LocusController::", new LocusControllerSerializer());
-                    _tmp.Add(@"NotebookLibrary.Controllers.SiteController::", new SiteControllerSerializer());
-                    _tmp.Add(@"XmlHelper::", new XmlHelperSerializer());
-                    _tmp.Add(@"NotebookLibrary.Controllers.PotteryBucketController::", new PotteryBucketControllerSerializer());
-                    _tmp.Add(@"NotebookLibrary.Models.LstInstallationMaterial::", new LstInstallationMaterialSerializer());
-                    _tmp.Add(@"NotebookLibrary.Controllers.ObjectController::", new ObjectControllerSerializer());
+                    _tmp.Add(@"NotebookLibrary.Controllers.GeospatialDataController::", new GeospatialDataControllerSerializer());
+                    _tmp.Add(@"NotebookLibrary.Controllers.TeamController::", new TeamControllerSerializer());
                     _tmp.Add(@"NotebookLibrary.Thing::", new ThingSerializer());
+                    _tmp.Add(@"NotebookLibrary.Models.LstInstallationMaterial::", new LstInstallationMaterialSerializer());
+                    _tmp.Add(@"NotebookLibrary.Models.LstInstallationMaterialQualifier::", new LstInstallationMaterialQualifierSerializer());
+                    _tmp.Add(@"NotebookLibrary.Controllers.PotteryBucketController::", new PotteryBucketControllerSerializer());
+                    _tmp.Add(@"NotebookLibrary.Controllers.SupervisorController::", new SupervisorControllerSerializer());
+                    _tmp.Add(@"XmlHelper::", new XmlHelperSerializer());
                     _tmp.Add(@"NotebookLibrary.Controllers.AreaController::", new AreaControllerSerializer());
                     _tmp.Add(@"NotebookLibrary.Controllers.SquareController::", new SquareControllerSerializer());
-                    _tmp.Add(@"NotebookLibrary.Controllers.GeospatialDataController::", new GeospatialDataControllerSerializer());
-                    _tmp.Add(@"NotebookLibrary.Controllers.SupervisorController::", new SupervisorControllerSerializer());
-                    _tmp.Add(@"NotebookLibrary.Controllers.TeamController::", new TeamControllerSerializer());
-                    _tmp.Add(@"NotebookLibrary.Models.LstInstallationMaterialQualifier::", new LstInstallationMaterialQualifierSerializer());
+                    _tmp.Add(@"NotebookLibrary.DataStoreInfo::", new DataStoreInfoSerializer());
+                    _tmp.Add(@"NotebookLibrary.Controllers.SiteController::", new SiteControllerSerializer());
+                    _tmp.Add(@"NotebookLibrary.Controllers.ObjectController::", new ObjectControllerSerializer());
                     if (typedSerializers == null) typedSerializers = _tmp;
                 }
                 return typedSerializers;
