@@ -1,12 +1,12 @@
 [assembly:System.Security.AllowPartiallyTrustedCallers()]
 [assembly:System.Security.SecurityTransparent()]
 [assembly:System.Security.SecurityRules(System.Security.SecurityRuleSet.Level1)]
-[assembly:System.Xml.Serialization.XmlSerializerVersionAttribute(ParentAssemblyId=@"90adb865-4d2a-41af-83a6-fd987c70634a,", Version=@"1.0.0.0")]
+[assembly:System.Xml.Serialization.XmlSerializerVersionAttribute(ParentAssemblyId=@"b132f6de-d410-4134-a8c0-85a46cfca8e9,", Version=@"1.0.0.0")]
 namespace Microsoft.Xml.Serialization.GeneratedAssembly {
 
     public class XmlSerializationWriter1 : System.Xml.Serialization.XmlSerializationWriter {
 
-        public void Write16_XmlHelper(object o) {
+        public void Write18_XmlHelper(object o) {
             WriteStartDocument();
             if (o == null) {
                 WriteNullTagLiteral(@"XmlHelper", @"");
@@ -16,7 +16,7 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             Write2_XmlHelper(@"XmlHelper", @"", ((global::XmlHelper)o), true, false);
         }
 
-        public void Write17_DataStoreInfo(object o) {
+        public void Write19_DataStoreInfo(object o) {
             WriteStartDocument();
             if (o == null) {
                 WriteNullTagLiteral(@"DataStoreInfo", @"");
@@ -26,7 +26,7 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             Write3_DataStoreInfo(@"DataStoreInfo", @"", ((global::NotebookLibrary.DataStoreInfo)o), true, false);
         }
 
-        public void Write18_Thing(object o) {
+        public void Write20_Thing(object o) {
             WriteStartDocument();
             if (o == null) {
                 WriteNullTagLiteral(@"Thing", @"");
@@ -36,7 +36,7 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             Write4_Thing(@"Thing", @"", ((global::NotebookLibrary.Thing)o), true, false);
         }
 
-        public void Write19_LstInstallationMaterial(object o) {
+        public void Write21_LstInstallationMaterial(object o) {
             WriteStartDocument();
             if (o == null) {
                 WriteNullTagLiteral(@"LstInstallationMaterial", @"");
@@ -46,7 +46,7 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             Write5_LstInstallationMaterial(@"LstInstallationMaterial", @"", ((global::NotebookLibrary.Models.LstInstallationMaterial)o), true, false);
         }
 
-        public void Write20_Item(object o) {
+        public void Write22_Item(object o) {
             WriteStartDocument();
             if (o == null) {
                 WriteNullTagLiteral(@"LstInstallationMaterialQualifier", @"");
@@ -56,7 +56,7 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             Write6_Item(@"LstInstallationMaterialQualifier", @"", ((global::NotebookLibrary.Models.LstInstallationMaterialQualifier)o), true, false);
         }
 
-        public void Write21_AreaController(object o) {
+        public void Write23_AreaController(object o) {
             WriteStartDocument();
             if (o == null) {
                 WriteNullTagLiteral(@"AreaController", @"");
@@ -66,7 +66,7 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             Write7_AreaController(@"AreaController", @"", ((global::NotebookLibrary.Controllers.AreaController)o), true, false);
         }
 
-        public void Write22_GeospatialDataController(object o) {
+        public void Write24_GeospatialDataController(object o) {
             WriteStartDocument();
             if (o == null) {
                 WriteNullTagLiteral(@"GeospatialDataController", @"");
@@ -76,7 +76,7 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             Write8_GeospatialDataController(@"GeospatialDataController", @"", ((global::NotebookLibrary.Controllers.GeospatialDataController)o), true, false);
         }
 
-        public void Write23_LocusController(object o) {
+        public void Write25_LocusController(object o) {
             WriteStartDocument();
             if (o == null) {
                 WriteNullTagLiteral(@"LocusController", @"");
@@ -86,67 +86,87 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             Write9_LocusController(@"LocusController", @"", ((global::NotebookLibrary.Controllers.LocusController)o), true, false);
         }
 
-        public void Write24_ObjectController(object o) {
+        public void Write26_Item(object o) {
+            WriteStartDocument();
+            if (o == null) {
+                WriteNullTagLiteral(@"LstArchitecturalConstructionStyleController", @"");
+                return;
+            }
+            TopLevelElement();
+            Write10_Item(@"LstArchitecturalConstructionStyleController", @"", ((global::NotebookLibrary.Controllers.LstArchitecturalConstructionStyleController)o), true, false);
+        }
+
+        public void Write27_Item(object o) {
+            WriteStartDocument();
+            if (o == null) {
+                WriteNullTagLiteral(@"LstArchitecturalConstructionSupportController", @"");
+                return;
+            }
+            TopLevelElement();
+            Write11_Item(@"LstArchitecturalConstructionSupportController", @"", ((global::NotebookLibrary.Controllers.LstArchitecturalConstructionSupportController)o), true, false);
+        }
+
+        public void Write28_ObjectController(object o) {
             WriteStartDocument();
             if (o == null) {
                 WriteNullTagLiteral(@"ObjectController", @"");
                 return;
             }
             TopLevelElement();
-            Write10_ObjectController(@"ObjectController", @"", ((global::NotebookLibrary.Controllers.ObjectController)o), true, false);
+            Write12_ObjectController(@"ObjectController", @"", ((global::NotebookLibrary.Controllers.ObjectController)o), true, false);
         }
 
-        public void Write25_PotteryBucketController(object o) {
+        public void Write29_PotteryBucketController(object o) {
             WriteStartDocument();
             if (o == null) {
                 WriteNullTagLiteral(@"PotteryBucketController", @"");
                 return;
             }
             TopLevelElement();
-            Write11_PotteryBucketController(@"PotteryBucketController", @"", ((global::NotebookLibrary.Controllers.PotteryBucketController)o), true, false);
+            Write13_PotteryBucketController(@"PotteryBucketController", @"", ((global::NotebookLibrary.Controllers.PotteryBucketController)o), true, false);
         }
 
-        public void Write26_SiteController(object o) {
+        public void Write30_SiteController(object o) {
             WriteStartDocument();
             if (o == null) {
                 WriteNullTagLiteral(@"SiteController", @"");
                 return;
             }
             TopLevelElement();
-            Write12_SiteController(@"SiteController", @"", ((global::NotebookLibrary.Controllers.SiteController)o), true, false);
+            Write14_SiteController(@"SiteController", @"", ((global::NotebookLibrary.Controllers.SiteController)o), true, false);
         }
 
-        public void Write27_SquareController(object o) {
+        public void Write31_SquareController(object o) {
             WriteStartDocument();
             if (o == null) {
                 WriteNullTagLiteral(@"SquareController", @"");
                 return;
             }
             TopLevelElement();
-            Write13_SquareController(@"SquareController", @"", ((global::NotebookLibrary.Controllers.SquareController)o), true, false);
+            Write15_SquareController(@"SquareController", @"", ((global::NotebookLibrary.Controllers.SquareController)o), true, false);
         }
 
-        public void Write28_SupervisorController(object o) {
+        public void Write32_SupervisorController(object o) {
             WriteStartDocument();
             if (o == null) {
                 WriteNullTagLiteral(@"SupervisorController", @"");
                 return;
             }
             TopLevelElement();
-            Write14_SupervisorController(@"SupervisorController", @"", ((global::NotebookLibrary.Controllers.SupervisorController)o), true, false);
+            Write16_SupervisorController(@"SupervisorController", @"", ((global::NotebookLibrary.Controllers.SupervisorController)o), true, false);
         }
 
-        public void Write29_TeamController(object o) {
+        public void Write33_TeamController(object o) {
             WriteStartDocument();
             if (o == null) {
                 WriteNullTagLiteral(@"TeamController", @"");
                 return;
             }
             TopLevelElement();
-            Write15_TeamController(@"TeamController", @"", ((global::NotebookLibrary.Controllers.TeamController)o), true, false);
+            Write17_TeamController(@"TeamController", @"", ((global::NotebookLibrary.Controllers.TeamController)o), true, false);
         }
 
-        void Write15_TeamController(string n, string ns, global::NotebookLibrary.Controllers.TeamController o, bool isNullable, bool needType) {
+        void Write17_TeamController(string n, string ns, global::NotebookLibrary.Controllers.TeamController o, bool isNullable, bool needType) {
             if ((object)o == null) {
                 if (isNullable) WriteNullTagLiteral(n, ns);
                 return;
@@ -164,7 +184,7 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             WriteEndElement(o);
         }
 
-        void Write14_SupervisorController(string n, string ns, global::NotebookLibrary.Controllers.SupervisorController o, bool isNullable, bool needType) {
+        void Write16_SupervisorController(string n, string ns, global::NotebookLibrary.Controllers.SupervisorController o, bool isNullable, bool needType) {
             if ((object)o == null) {
                 if (isNullable) WriteNullTagLiteral(n, ns);
                 return;
@@ -182,7 +202,7 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             WriteEndElement(o);
         }
 
-        void Write13_SquareController(string n, string ns, global::NotebookLibrary.Controllers.SquareController o, bool isNullable, bool needType) {
+        void Write15_SquareController(string n, string ns, global::NotebookLibrary.Controllers.SquareController o, bool isNullable, bool needType) {
             if ((object)o == null) {
                 if (isNullable) WriteNullTagLiteral(n, ns);
                 return;
@@ -200,7 +220,7 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             WriteEndElement(o);
         }
 
-        void Write12_SiteController(string n, string ns, global::NotebookLibrary.Controllers.SiteController o, bool isNullable, bool needType) {
+        void Write14_SiteController(string n, string ns, global::NotebookLibrary.Controllers.SiteController o, bool isNullable, bool needType) {
             if ((object)o == null) {
                 if (isNullable) WriteNullTagLiteral(n, ns);
                 return;
@@ -218,7 +238,7 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             WriteEndElement(o);
         }
 
-        void Write11_PotteryBucketController(string n, string ns, global::NotebookLibrary.Controllers.PotteryBucketController o, bool isNullable, bool needType) {
+        void Write13_PotteryBucketController(string n, string ns, global::NotebookLibrary.Controllers.PotteryBucketController o, bool isNullable, bool needType) {
             if ((object)o == null) {
                 if (isNullable) WriteNullTagLiteral(n, ns);
                 return;
@@ -236,7 +256,7 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             WriteEndElement(o);
         }
 
-        void Write10_ObjectController(string n, string ns, global::NotebookLibrary.Controllers.ObjectController o, bool isNullable, bool needType) {
+        void Write12_ObjectController(string n, string ns, global::NotebookLibrary.Controllers.ObjectController o, bool isNullable, bool needType) {
             if ((object)o == null) {
                 if (isNullable) WriteNullTagLiteral(n, ns);
                 return;
@@ -251,6 +271,42 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             }
             WriteStartElement(n, ns, o, false, null);
             if (needType) WriteXsiType(@"ObjectController", @"");
+            WriteEndElement(o);
+        }
+
+        void Write11_Item(string n, string ns, global::NotebookLibrary.Controllers.LstArchitecturalConstructionSupportController o, bool isNullable, bool needType) {
+            if ((object)o == null) {
+                if (isNullable) WriteNullTagLiteral(n, ns);
+                return;
+            }
+            if (!needType) {
+                System.Type t = o.GetType();
+                if (t == typeof(global::NotebookLibrary.Controllers.LstArchitecturalConstructionSupportController)) {
+                }
+                else {
+                    throw CreateUnknownTypeException(o);
+                }
+            }
+            WriteStartElement(n, ns, o, false, null);
+            if (needType) WriteXsiType(@"LstArchitecturalConstructionSupportController", @"");
+            WriteEndElement(o);
+        }
+
+        void Write10_Item(string n, string ns, global::NotebookLibrary.Controllers.LstArchitecturalConstructionStyleController o, bool isNullable, bool needType) {
+            if ((object)o == null) {
+                if (isNullable) WriteNullTagLiteral(n, ns);
+                return;
+            }
+            if (!needType) {
+                System.Type t = o.GetType();
+                if (t == typeof(global::NotebookLibrary.Controllers.LstArchitecturalConstructionStyleController)) {
+                }
+                else {
+                    throw CreateUnknownTypeException(o);
+                }
+            }
+            WriteStartElement(n, ns, o, false, null);
+            if (needType) WriteXsiType(@"LstArchitecturalConstructionStyleController", @"");
             WriteEndElement(o);
         }
 
@@ -412,7 +468,7 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
 
     public class XmlSerializationReader1 : System.Xml.Serialization.XmlSerializationReader {
 
-        public object Read16_XmlHelper() {
+        public object Read18_XmlHelper() {
             object o = null;
             Reader.MoveToContent();
             if (Reader.NodeType == System.Xml.XmlNodeType.Element) {
@@ -430,7 +486,7 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             return (object)o;
         }
 
-        public object Read17_DataStoreInfo() {
+        public object Read19_DataStoreInfo() {
             object o = null;
             Reader.MoveToContent();
             if (Reader.NodeType == System.Xml.XmlNodeType.Element) {
@@ -448,7 +504,7 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             return (object)o;
         }
 
-        public object Read18_Thing() {
+        public object Read20_Thing() {
             object o = null;
             Reader.MoveToContent();
             if (Reader.NodeType == System.Xml.XmlNodeType.Element) {
@@ -466,7 +522,7 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             return (object)o;
         }
 
-        public object Read19_LstInstallationMaterial() {
+        public object Read21_LstInstallationMaterial() {
             object o = null;
             Reader.MoveToContent();
             if (Reader.NodeType == System.Xml.XmlNodeType.Element) {
@@ -484,7 +540,7 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             return (object)o;
         }
 
-        public object Read20_Item() {
+        public object Read22_Item() {
             object o = null;
             Reader.MoveToContent();
             if (Reader.NodeType == System.Xml.XmlNodeType.Element) {
@@ -502,7 +558,7 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             return (object)o;
         }
 
-        public object Read21_AreaController() {
+        public object Read23_AreaController() {
             object o = null;
             Reader.MoveToContent();
             if (Reader.NodeType == System.Xml.XmlNodeType.Element) {
@@ -520,7 +576,7 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             return (object)o;
         }
 
-        public object Read22_GeospatialDataController() {
+        public object Read24_GeospatialDataController() {
             object o = null;
             Reader.MoveToContent();
             if (Reader.NodeType == System.Xml.XmlNodeType.Element) {
@@ -538,7 +594,7 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             return (object)o;
         }
 
-        public object Read23_LocusController() {
+        public object Read25_LocusController() {
             object o = null;
             Reader.MoveToContent();
             if (Reader.NodeType == System.Xml.XmlNodeType.Element) {
@@ -556,13 +612,49 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             return (object)o;
         }
 
-        public object Read24_ObjectController() {
+        public object Read26_Item() {
             object o = null;
             Reader.MoveToContent();
             if (Reader.NodeType == System.Xml.XmlNodeType.Element) {
                 do {
-                    if (((object) Reader.LocalName == (object)id10_ObjectController && (object) Reader.NamespaceURI == (object)id2_Item)) {
-                        o = Read10_ObjectController(true, true);
+                    if (((object) Reader.LocalName == (object)id10_Item && (object) Reader.NamespaceURI == (object)id2_Item)) {
+                        o = Read10_Item(true, true);
+                        break;
+                    }
+                    throw CreateUnknownNodeException();
+                } while (false);
+            }
+            else {
+                UnknownNode(null, @":LstArchitecturalConstructionStyleController");
+            }
+            return (object)o;
+        }
+
+        public object Read27_Item() {
+            object o = null;
+            Reader.MoveToContent();
+            if (Reader.NodeType == System.Xml.XmlNodeType.Element) {
+                do {
+                    if (((object) Reader.LocalName == (object)id11_Item && (object) Reader.NamespaceURI == (object)id2_Item)) {
+                        o = Read11_Item(true, true);
+                        break;
+                    }
+                    throw CreateUnknownNodeException();
+                } while (false);
+            }
+            else {
+                UnknownNode(null, @":LstArchitecturalConstructionSupportController");
+            }
+            return (object)o;
+        }
+
+        public object Read28_ObjectController() {
+            object o = null;
+            Reader.MoveToContent();
+            if (Reader.NodeType == System.Xml.XmlNodeType.Element) {
+                do {
+                    if (((object) Reader.LocalName == (object)id12_ObjectController && (object) Reader.NamespaceURI == (object)id2_Item)) {
+                        o = Read12_ObjectController(true, true);
                         break;
                     }
                     throw CreateUnknownNodeException();
@@ -574,13 +666,13 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             return (object)o;
         }
 
-        public object Read25_PotteryBucketController() {
+        public object Read29_PotteryBucketController() {
             object o = null;
             Reader.MoveToContent();
             if (Reader.NodeType == System.Xml.XmlNodeType.Element) {
                 do {
-                    if (((object) Reader.LocalName == (object)id11_PotteryBucketController && (object) Reader.NamespaceURI == (object)id2_Item)) {
-                        o = Read11_PotteryBucketController(true, true);
+                    if (((object) Reader.LocalName == (object)id13_PotteryBucketController && (object) Reader.NamespaceURI == (object)id2_Item)) {
+                        o = Read13_PotteryBucketController(true, true);
                         break;
                     }
                     throw CreateUnknownNodeException();
@@ -592,13 +684,13 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             return (object)o;
         }
 
-        public object Read26_SiteController() {
+        public object Read30_SiteController() {
             object o = null;
             Reader.MoveToContent();
             if (Reader.NodeType == System.Xml.XmlNodeType.Element) {
                 do {
-                    if (((object) Reader.LocalName == (object)id12_SiteController && (object) Reader.NamespaceURI == (object)id2_Item)) {
-                        o = Read12_SiteController(true, true);
+                    if (((object) Reader.LocalName == (object)id14_SiteController && (object) Reader.NamespaceURI == (object)id2_Item)) {
+                        o = Read14_SiteController(true, true);
                         break;
                     }
                     throw CreateUnknownNodeException();
@@ -610,13 +702,13 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             return (object)o;
         }
 
-        public object Read27_SquareController() {
+        public object Read31_SquareController() {
             object o = null;
             Reader.MoveToContent();
             if (Reader.NodeType == System.Xml.XmlNodeType.Element) {
                 do {
-                    if (((object) Reader.LocalName == (object)id13_SquareController && (object) Reader.NamespaceURI == (object)id2_Item)) {
-                        o = Read13_SquareController(true, true);
+                    if (((object) Reader.LocalName == (object)id15_SquareController && (object) Reader.NamespaceURI == (object)id2_Item)) {
+                        o = Read15_SquareController(true, true);
                         break;
                     }
                     throw CreateUnknownNodeException();
@@ -628,13 +720,13 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             return (object)o;
         }
 
-        public object Read28_SupervisorController() {
+        public object Read32_SupervisorController() {
             object o = null;
             Reader.MoveToContent();
             if (Reader.NodeType == System.Xml.XmlNodeType.Element) {
                 do {
-                    if (((object) Reader.LocalName == (object)id14_SupervisorController && (object) Reader.NamespaceURI == (object)id2_Item)) {
-                        o = Read14_SupervisorController(true, true);
+                    if (((object) Reader.LocalName == (object)id16_SupervisorController && (object) Reader.NamespaceURI == (object)id2_Item)) {
+                        o = Read16_SupervisorController(true, true);
                         break;
                     }
                     throw CreateUnknownNodeException();
@@ -646,13 +738,13 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             return (object)o;
         }
 
-        public object Read29_TeamController() {
+        public object Read33_TeamController() {
             object o = null;
             Reader.MoveToContent();
             if (Reader.NodeType == System.Xml.XmlNodeType.Element) {
                 do {
-                    if (((object) Reader.LocalName == (object)id15_TeamController && (object) Reader.NamespaceURI == (object)id2_Item)) {
-                        o = Read15_TeamController(true, true);
+                    if (((object) Reader.LocalName == (object)id17_TeamController && (object) Reader.NamespaceURI == (object)id2_Item)) {
+                        o = Read17_TeamController(true, true);
                         break;
                     }
                     throw CreateUnknownNodeException();
@@ -664,12 +756,12 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             return (object)o;
         }
 
-        global::NotebookLibrary.Controllers.TeamController Read15_TeamController(bool isNullable, bool checkType) {
+        global::NotebookLibrary.Controllers.TeamController Read17_TeamController(bool isNullable, bool checkType) {
             System.Xml.XmlQualifiedName xsiType = checkType ? GetXsiType() : null;
             bool isNull = false;
             if (isNullable) isNull = ReadNull();
             if (checkType) {
-            if (xsiType == null || ((object) ((System.Xml.XmlQualifiedName)xsiType).Name == (object)id15_TeamController && (object) ((System.Xml.XmlQualifiedName)xsiType).Namespace == (object)id2_Item)) {
+            if (xsiType == null || ((object) ((System.Xml.XmlQualifiedName)xsiType).Name == (object)id17_TeamController && (object) ((System.Xml.XmlQualifiedName)xsiType).Namespace == (object)id2_Item)) {
             }
             else {
                 throw CreateUnknownTypeException((System.Xml.XmlQualifiedName)xsiType);
@@ -707,12 +799,12 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             return o;
         }
 
-        global::NotebookLibrary.Controllers.SupervisorController Read14_SupervisorController(bool isNullable, bool checkType) {
+        global::NotebookLibrary.Controllers.SupervisorController Read16_SupervisorController(bool isNullable, bool checkType) {
             System.Xml.XmlQualifiedName xsiType = checkType ? GetXsiType() : null;
             bool isNull = false;
             if (isNullable) isNull = ReadNull();
             if (checkType) {
-            if (xsiType == null || ((object) ((System.Xml.XmlQualifiedName)xsiType).Name == (object)id14_SupervisorController && (object) ((System.Xml.XmlQualifiedName)xsiType).Namespace == (object)id2_Item)) {
+            if (xsiType == null || ((object) ((System.Xml.XmlQualifiedName)xsiType).Name == (object)id16_SupervisorController && (object) ((System.Xml.XmlQualifiedName)xsiType).Namespace == (object)id2_Item)) {
             }
             else {
                 throw CreateUnknownTypeException((System.Xml.XmlQualifiedName)xsiType);
@@ -750,12 +842,12 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             return o;
         }
 
-        global::NotebookLibrary.Controllers.SquareController Read13_SquareController(bool isNullable, bool checkType) {
+        global::NotebookLibrary.Controllers.SquareController Read15_SquareController(bool isNullable, bool checkType) {
             System.Xml.XmlQualifiedName xsiType = checkType ? GetXsiType() : null;
             bool isNull = false;
             if (isNullable) isNull = ReadNull();
             if (checkType) {
-            if (xsiType == null || ((object) ((System.Xml.XmlQualifiedName)xsiType).Name == (object)id13_SquareController && (object) ((System.Xml.XmlQualifiedName)xsiType).Namespace == (object)id2_Item)) {
+            if (xsiType == null || ((object) ((System.Xml.XmlQualifiedName)xsiType).Name == (object)id15_SquareController && (object) ((System.Xml.XmlQualifiedName)xsiType).Namespace == (object)id2_Item)) {
             }
             else {
                 throw CreateUnknownTypeException((System.Xml.XmlQualifiedName)xsiType);
@@ -793,12 +885,12 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             return o;
         }
 
-        global::NotebookLibrary.Controllers.SiteController Read12_SiteController(bool isNullable, bool checkType) {
+        global::NotebookLibrary.Controllers.SiteController Read14_SiteController(bool isNullable, bool checkType) {
             System.Xml.XmlQualifiedName xsiType = checkType ? GetXsiType() : null;
             bool isNull = false;
             if (isNullable) isNull = ReadNull();
             if (checkType) {
-            if (xsiType == null || ((object) ((System.Xml.XmlQualifiedName)xsiType).Name == (object)id12_SiteController && (object) ((System.Xml.XmlQualifiedName)xsiType).Namespace == (object)id2_Item)) {
+            if (xsiType == null || ((object) ((System.Xml.XmlQualifiedName)xsiType).Name == (object)id14_SiteController && (object) ((System.Xml.XmlQualifiedName)xsiType).Namespace == (object)id2_Item)) {
             }
             else {
                 throw CreateUnknownTypeException((System.Xml.XmlQualifiedName)xsiType);
@@ -836,12 +928,12 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             return o;
         }
 
-        global::NotebookLibrary.Controllers.PotteryBucketController Read11_PotteryBucketController(bool isNullable, bool checkType) {
+        global::NotebookLibrary.Controllers.PotteryBucketController Read13_PotteryBucketController(bool isNullable, bool checkType) {
             System.Xml.XmlQualifiedName xsiType = checkType ? GetXsiType() : null;
             bool isNull = false;
             if (isNullable) isNull = ReadNull();
             if (checkType) {
-            if (xsiType == null || ((object) ((System.Xml.XmlQualifiedName)xsiType).Name == (object)id11_PotteryBucketController && (object) ((System.Xml.XmlQualifiedName)xsiType).Namespace == (object)id2_Item)) {
+            if (xsiType == null || ((object) ((System.Xml.XmlQualifiedName)xsiType).Name == (object)id13_PotteryBucketController && (object) ((System.Xml.XmlQualifiedName)xsiType).Namespace == (object)id2_Item)) {
             }
             else {
                 throw CreateUnknownTypeException((System.Xml.XmlQualifiedName)xsiType);
@@ -879,12 +971,12 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             return o;
         }
 
-        global::NotebookLibrary.Controllers.ObjectController Read10_ObjectController(bool isNullable, bool checkType) {
+        global::NotebookLibrary.Controllers.ObjectController Read12_ObjectController(bool isNullable, bool checkType) {
             System.Xml.XmlQualifiedName xsiType = checkType ? GetXsiType() : null;
             bool isNull = false;
             if (isNullable) isNull = ReadNull();
             if (checkType) {
-            if (xsiType == null || ((object) ((System.Xml.XmlQualifiedName)xsiType).Name == (object)id10_ObjectController && (object) ((System.Xml.XmlQualifiedName)xsiType).Namespace == (object)id2_Item)) {
+            if (xsiType == null || ((object) ((System.Xml.XmlQualifiedName)xsiType).Name == (object)id12_ObjectController && (object) ((System.Xml.XmlQualifiedName)xsiType).Namespace == (object)id2_Item)) {
             }
             else {
                 throw CreateUnknownTypeException((System.Xml.XmlQualifiedName)xsiType);
@@ -922,6 +1014,92 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             return o;
         }
 
+        global::NotebookLibrary.Controllers.LstArchitecturalConstructionSupportController Read11_Item(bool isNullable, bool checkType) {
+            System.Xml.XmlQualifiedName xsiType = checkType ? GetXsiType() : null;
+            bool isNull = false;
+            if (isNullable) isNull = ReadNull();
+            if (checkType) {
+            if (xsiType == null || ((object) ((System.Xml.XmlQualifiedName)xsiType).Name == (object)id11_Item && (object) ((System.Xml.XmlQualifiedName)xsiType).Namespace == (object)id2_Item)) {
+            }
+            else {
+                throw CreateUnknownTypeException((System.Xml.XmlQualifiedName)xsiType);
+            }
+            }
+            if (isNull) return null;
+            global::NotebookLibrary.Controllers.LstArchitecturalConstructionSupportController o;
+            o = new global::NotebookLibrary.Controllers.LstArchitecturalConstructionSupportController();
+            bool[] paramsRead = new bool[0];
+            while (Reader.MoveToNextAttribute()) {
+                if (!IsXmlnsAttribute(Reader.Name)) {
+                    UnknownNode((object)o);
+                }
+            }
+            Reader.MoveToElement();
+            if (Reader.IsEmptyElement) {
+                Reader.Skip();
+                return o;
+            }
+            Reader.ReadStartElement();
+            Reader.MoveToContent();
+            int whileIterations6 = 0;
+            int readerCount6 = ReaderCount;
+            while (Reader.NodeType != System.Xml.XmlNodeType.EndElement && Reader.NodeType != System.Xml.XmlNodeType.None) {
+                if (Reader.NodeType == System.Xml.XmlNodeType.Element) {
+                    UnknownNode((object)o, @"");
+                }
+                else {
+                    UnknownNode((object)o, @"");
+                }
+                Reader.MoveToContent();
+                CheckReaderCount(ref whileIterations6, ref readerCount6);
+            }
+            ReadEndElement();
+            return o;
+        }
+
+        global::NotebookLibrary.Controllers.LstArchitecturalConstructionStyleController Read10_Item(bool isNullable, bool checkType) {
+            System.Xml.XmlQualifiedName xsiType = checkType ? GetXsiType() : null;
+            bool isNull = false;
+            if (isNullable) isNull = ReadNull();
+            if (checkType) {
+            if (xsiType == null || ((object) ((System.Xml.XmlQualifiedName)xsiType).Name == (object)id10_Item && (object) ((System.Xml.XmlQualifiedName)xsiType).Namespace == (object)id2_Item)) {
+            }
+            else {
+                throw CreateUnknownTypeException((System.Xml.XmlQualifiedName)xsiType);
+            }
+            }
+            if (isNull) return null;
+            global::NotebookLibrary.Controllers.LstArchitecturalConstructionStyleController o;
+            o = new global::NotebookLibrary.Controllers.LstArchitecturalConstructionStyleController();
+            bool[] paramsRead = new bool[0];
+            while (Reader.MoveToNextAttribute()) {
+                if (!IsXmlnsAttribute(Reader.Name)) {
+                    UnknownNode((object)o);
+                }
+            }
+            Reader.MoveToElement();
+            if (Reader.IsEmptyElement) {
+                Reader.Skip();
+                return o;
+            }
+            Reader.ReadStartElement();
+            Reader.MoveToContent();
+            int whileIterations7 = 0;
+            int readerCount7 = ReaderCount;
+            while (Reader.NodeType != System.Xml.XmlNodeType.EndElement && Reader.NodeType != System.Xml.XmlNodeType.None) {
+                if (Reader.NodeType == System.Xml.XmlNodeType.Element) {
+                    UnknownNode((object)o, @"");
+                }
+                else {
+                    UnknownNode((object)o, @"");
+                }
+                Reader.MoveToContent();
+                CheckReaderCount(ref whileIterations7, ref readerCount7);
+            }
+            ReadEndElement();
+            return o;
+        }
+
         global::NotebookLibrary.Controllers.LocusController Read9_LocusController(bool isNullable, bool checkType) {
             System.Xml.XmlQualifiedName xsiType = checkType ? GetXsiType() : null;
             bool isNull = false;
@@ -949,8 +1127,8 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             }
             Reader.ReadStartElement();
             Reader.MoveToContent();
-            int whileIterations6 = 0;
-            int readerCount6 = ReaderCount;
+            int whileIterations8 = 0;
+            int readerCount8 = ReaderCount;
             while (Reader.NodeType != System.Xml.XmlNodeType.EndElement && Reader.NodeType != System.Xml.XmlNodeType.None) {
                 if (Reader.NodeType == System.Xml.XmlNodeType.Element) {
                     UnknownNode((object)o, @"");
@@ -959,7 +1137,7 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
                     UnknownNode((object)o, @"");
                 }
                 Reader.MoveToContent();
-                CheckReaderCount(ref whileIterations6, ref readerCount6);
+                CheckReaderCount(ref whileIterations8, ref readerCount8);
             }
             ReadEndElement();
             return o;
@@ -992,8 +1170,8 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             }
             Reader.ReadStartElement();
             Reader.MoveToContent();
-            int whileIterations7 = 0;
-            int readerCount7 = ReaderCount;
+            int whileIterations9 = 0;
+            int readerCount9 = ReaderCount;
             while (Reader.NodeType != System.Xml.XmlNodeType.EndElement && Reader.NodeType != System.Xml.XmlNodeType.None) {
                 if (Reader.NodeType == System.Xml.XmlNodeType.Element) {
                     UnknownNode((object)o, @"");
@@ -1002,7 +1180,7 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
                     UnknownNode((object)o, @"");
                 }
                 Reader.MoveToContent();
-                CheckReaderCount(ref whileIterations7, ref readerCount7);
+                CheckReaderCount(ref whileIterations9, ref readerCount9);
             }
             ReadEndElement();
             return o;
@@ -1035,8 +1213,8 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             }
             Reader.ReadStartElement();
             Reader.MoveToContent();
-            int whileIterations8 = 0;
-            int readerCount8 = ReaderCount;
+            int whileIterations10 = 0;
+            int readerCount10 = ReaderCount;
             while (Reader.NodeType != System.Xml.XmlNodeType.EndElement && Reader.NodeType != System.Xml.XmlNodeType.None) {
                 if (Reader.NodeType == System.Xml.XmlNodeType.Element) {
                     UnknownNode((object)o, @"");
@@ -1045,7 +1223,7 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
                     UnknownNode((object)o, @"");
                 }
                 Reader.MoveToContent();
-                CheckReaderCount(ref whileIterations8, ref readerCount8);
+                CheckReaderCount(ref whileIterations10, ref readerCount10);
             }
             ReadEndElement();
             return o;
@@ -1078,19 +1256,19 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             }
             Reader.ReadStartElement();
             Reader.MoveToContent();
-            int whileIterations9 = 0;
-            int readerCount9 = ReaderCount;
+            int whileIterations11 = 0;
+            int readerCount11 = ReaderCount;
             while (Reader.NodeType != System.Xml.XmlNodeType.EndElement && Reader.NodeType != System.Xml.XmlNodeType.None) {
                 if (Reader.NodeType == System.Xml.XmlNodeType.Element) {
                     do {
-                        if (!paramsRead[0] && ((object) Reader.LocalName == (object)id16_Id && (object) Reader.NamespaceURI == (object)id2_Item)) {
+                        if (!paramsRead[0] && ((object) Reader.LocalName == (object)id18_Id && (object) Reader.NamespaceURI == (object)id2_Item)) {
                             {
                                 o.@Id = System.Xml.XmlConvert.ToByte(Reader.ReadElementString());
                             }
                             paramsRead[0] = true;
                             break;
                         }
-                        if (!paramsRead[1] && ((object) Reader.LocalName == (object)id17_Description && (object) Reader.NamespaceURI == (object)id2_Item)) {
+                        if (!paramsRead[1] && ((object) Reader.LocalName == (object)id19_Description && (object) Reader.NamespaceURI == (object)id2_Item)) {
                             {
                                 o.@Description = Reader.ReadElementString();
                             }
@@ -1104,7 +1282,7 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
                     UnknownNode((object)o, @":Id, :Description");
                 }
                 Reader.MoveToContent();
-                CheckReaderCount(ref whileIterations9, ref readerCount9);
+                CheckReaderCount(ref whileIterations11, ref readerCount11);
             }
             ReadEndElement();
             return o;
@@ -1137,19 +1315,19 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             }
             Reader.ReadStartElement();
             Reader.MoveToContent();
-            int whileIterations10 = 0;
-            int readerCount10 = ReaderCount;
+            int whileIterations12 = 0;
+            int readerCount12 = ReaderCount;
             while (Reader.NodeType != System.Xml.XmlNodeType.EndElement && Reader.NodeType != System.Xml.XmlNodeType.None) {
                 if (Reader.NodeType == System.Xml.XmlNodeType.Element) {
                     do {
-                        if (!paramsRead[0] && ((object) Reader.LocalName == (object)id16_Id && (object) Reader.NamespaceURI == (object)id2_Item)) {
+                        if (!paramsRead[0] && ((object) Reader.LocalName == (object)id18_Id && (object) Reader.NamespaceURI == (object)id2_Item)) {
                             {
                                 o.@Id = System.Xml.XmlConvert.ToByte(Reader.ReadElementString());
                             }
                             paramsRead[0] = true;
                             break;
                         }
-                        if (!paramsRead[1] && ((object) Reader.LocalName == (object)id17_Description && (object) Reader.NamespaceURI == (object)id2_Item)) {
+                        if (!paramsRead[1] && ((object) Reader.LocalName == (object)id19_Description && (object) Reader.NamespaceURI == (object)id2_Item)) {
                             {
                                 o.@Description = Reader.ReadElementString();
                             }
@@ -1163,7 +1341,7 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
                     UnknownNode((object)o, @":Id, :Description");
                 }
                 Reader.MoveToContent();
-                CheckReaderCount(ref whileIterations10, ref readerCount10);
+                CheckReaderCount(ref whileIterations12, ref readerCount12);
             }
             ReadEndElement();
             return o;
@@ -1196,8 +1374,8 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             }
             Reader.ReadStartElement();
             Reader.MoveToContent();
-            int whileIterations11 = 0;
-            int readerCount11 = ReaderCount;
+            int whileIterations13 = 0;
+            int readerCount13 = ReaderCount;
             while (Reader.NodeType != System.Xml.XmlNodeType.EndElement && Reader.NodeType != System.Xml.XmlNodeType.None) {
                 if (Reader.NodeType == System.Xml.XmlNodeType.Element) {
                     UnknownNode((object)o, @"");
@@ -1206,7 +1384,7 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
                     UnknownNode((object)o, @"");
                 }
                 Reader.MoveToContent();
-                CheckReaderCount(ref whileIterations11, ref readerCount11);
+                CheckReaderCount(ref whileIterations13, ref readerCount13);
             }
             ReadEndElement();
             return o;
@@ -1239,33 +1417,33 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             }
             Reader.ReadStartElement();
             Reader.MoveToContent();
-            int whileIterations12 = 0;
-            int readerCount12 = ReaderCount;
+            int whileIterations14 = 0;
+            int readerCount14 = ReaderCount;
             while (Reader.NodeType != System.Xml.XmlNodeType.EndElement && Reader.NodeType != System.Xml.XmlNodeType.None) {
                 if (Reader.NodeType == System.Xml.XmlNodeType.Element) {
                     do {
-                        if (!paramsRead[0] && ((object) Reader.LocalName == (object)id18_Database && (object) Reader.NamespaceURI == (object)id2_Item)) {
+                        if (!paramsRead[0] && ((object) Reader.LocalName == (object)id20_Database && (object) Reader.NamespaceURI == (object)id2_Item)) {
                             {
                                 o.@Database = Reader.ReadElementString();
                             }
                             paramsRead[0] = true;
                             break;
                         }
-                        if (!paramsRead[1] && ((object) Reader.LocalName == (object)id19_ServerAddress && (object) Reader.NamespaceURI == (object)id2_Item)) {
+                        if (!paramsRead[1] && ((object) Reader.LocalName == (object)id21_ServerAddress && (object) Reader.NamespaceURI == (object)id2_Item)) {
                             {
                                 o.@ServerAddress = Reader.ReadElementString();
                             }
                             paramsRead[1] = true;
                             break;
                         }
-                        if (!paramsRead[2] && ((object) Reader.LocalName == (object)id20_ServerUsername && (object) Reader.NamespaceURI == (object)id2_Item)) {
+                        if (!paramsRead[2] && ((object) Reader.LocalName == (object)id22_ServerUsername && (object) Reader.NamespaceURI == (object)id2_Item)) {
                             {
                                 o.@ServerUsername = Reader.ReadElementString();
                             }
                             paramsRead[2] = true;
                             break;
                         }
-                        if (!paramsRead[3] && ((object) Reader.LocalName == (object)id21_ServerPassword && (object) Reader.NamespaceURI == (object)id2_Item)) {
+                        if (!paramsRead[3] && ((object) Reader.LocalName == (object)id23_ServerPassword && (object) Reader.NamespaceURI == (object)id2_Item)) {
                             {
                                 o.@ServerPassword = Reader.ReadElementString();
                             }
@@ -1279,7 +1457,7 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
                     UnknownNode((object)o, @":Database, :ServerAddress, :ServerUsername, :ServerPassword");
                 }
                 Reader.MoveToContent();
-                CheckReaderCount(ref whileIterations12, ref readerCount12);
+                CheckReaderCount(ref whileIterations14, ref readerCount14);
             }
             ReadEndElement();
             return o;
@@ -1312,8 +1490,8 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             }
             Reader.ReadStartElement();
             Reader.MoveToContent();
-            int whileIterations13 = 0;
-            int readerCount13 = ReaderCount;
+            int whileIterations15 = 0;
+            int readerCount15 = ReaderCount;
             while (Reader.NodeType != System.Xml.XmlNodeType.EndElement && Reader.NodeType != System.Xml.XmlNodeType.None) {
                 if (Reader.NodeType == System.Xml.XmlNodeType.Element) {
                     UnknownNode((object)o, @"");
@@ -1322,7 +1500,7 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
                     UnknownNode((object)o, @"");
                 }
                 Reader.MoveToContent();
-                CheckReaderCount(ref whileIterations13, ref readerCount13);
+                CheckReaderCount(ref whileIterations15, ref readerCount15);
             }
             ReadEndElement();
             return o;
@@ -1331,50 +1509,54 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
         protected override void InitCallbacks() {
         }
 
-        string id15_TeamController;
-        string id3_DataStoreInfo;
-        string id16_Id;
-        string id9_LocusController;
-        string id19_ServerAddress;
-        string id13_SquareController;
-        string id21_ServerPassword;
-        string id14_SupervisorController;
-        string id7_AreaController;
-        string id4_Thing;
-        string id11_PotteryBucketController;
-        string id17_Description;
-        string id8_GeospatialDataController;
-        string id10_ObjectController;
         string id6_Item;
-        string id1_XmlHelper;
-        string id12_SiteController;
-        string id18_Database;
-        string id20_ServerUsername;
+        string id15_SquareController;
+        string id11_Item;
+        string id10_Item;
+        string id18_Id;
+        string id8_GeospatialDataController;
+        string id19_Description;
+        string id17_TeamController;
+        string id4_Thing;
         string id2_Item;
+        string id7_AreaController;
+        string id22_ServerUsername;
+        string id9_LocusController;
+        string id16_SupervisorController;
+        string id13_PotteryBucketController;
+        string id21_ServerAddress;
+        string id1_XmlHelper;
+        string id12_ObjectController;
+        string id14_SiteController;
+        string id23_ServerPassword;
         string id5_LstInstallationMaterial;
+        string id3_DataStoreInfo;
+        string id20_Database;
 
         protected override void InitIDs() {
-            id15_TeamController = Reader.NameTable.Add(@"TeamController");
-            id3_DataStoreInfo = Reader.NameTable.Add(@"DataStoreInfo");
-            id16_Id = Reader.NameTable.Add(@"Id");
-            id9_LocusController = Reader.NameTable.Add(@"LocusController");
-            id19_ServerAddress = Reader.NameTable.Add(@"ServerAddress");
-            id13_SquareController = Reader.NameTable.Add(@"SquareController");
-            id21_ServerPassword = Reader.NameTable.Add(@"ServerPassword");
-            id14_SupervisorController = Reader.NameTable.Add(@"SupervisorController");
-            id7_AreaController = Reader.NameTable.Add(@"AreaController");
-            id4_Thing = Reader.NameTable.Add(@"Thing");
-            id11_PotteryBucketController = Reader.NameTable.Add(@"PotteryBucketController");
-            id17_Description = Reader.NameTable.Add(@"Description");
-            id8_GeospatialDataController = Reader.NameTable.Add(@"GeospatialDataController");
-            id10_ObjectController = Reader.NameTable.Add(@"ObjectController");
             id6_Item = Reader.NameTable.Add(@"LstInstallationMaterialQualifier");
-            id1_XmlHelper = Reader.NameTable.Add(@"XmlHelper");
-            id12_SiteController = Reader.NameTable.Add(@"SiteController");
-            id18_Database = Reader.NameTable.Add(@"Database");
-            id20_ServerUsername = Reader.NameTable.Add(@"ServerUsername");
+            id15_SquareController = Reader.NameTable.Add(@"SquareController");
+            id11_Item = Reader.NameTable.Add(@"LstArchitecturalConstructionSupportController");
+            id10_Item = Reader.NameTable.Add(@"LstArchitecturalConstructionStyleController");
+            id18_Id = Reader.NameTable.Add(@"Id");
+            id8_GeospatialDataController = Reader.NameTable.Add(@"GeospatialDataController");
+            id19_Description = Reader.NameTable.Add(@"Description");
+            id17_TeamController = Reader.NameTable.Add(@"TeamController");
+            id4_Thing = Reader.NameTable.Add(@"Thing");
             id2_Item = Reader.NameTable.Add(@"");
+            id7_AreaController = Reader.NameTable.Add(@"AreaController");
+            id22_ServerUsername = Reader.NameTable.Add(@"ServerUsername");
+            id9_LocusController = Reader.NameTable.Add(@"LocusController");
+            id16_SupervisorController = Reader.NameTable.Add(@"SupervisorController");
+            id13_PotteryBucketController = Reader.NameTable.Add(@"PotteryBucketController");
+            id21_ServerAddress = Reader.NameTable.Add(@"ServerAddress");
+            id1_XmlHelper = Reader.NameTable.Add(@"XmlHelper");
+            id12_ObjectController = Reader.NameTable.Add(@"ObjectController");
+            id14_SiteController = Reader.NameTable.Add(@"SiteController");
+            id23_ServerPassword = Reader.NameTable.Add(@"ServerPassword");
             id5_LstInstallationMaterial = Reader.NameTable.Add(@"LstInstallationMaterial");
+            id3_DataStoreInfo = Reader.NameTable.Add(@"DataStoreInfo");
+            id20_Database = Reader.NameTable.Add(@"Database");
         }
     }
 
@@ -1394,11 +1576,11 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
         }
 
         protected override void Serialize(object objectToSerialize, System.Xml.Serialization.XmlSerializationWriter writer) {
-            ((XmlSerializationWriter1)writer).Write16_XmlHelper(objectToSerialize);
+            ((XmlSerializationWriter1)writer).Write18_XmlHelper(objectToSerialize);
         }
 
         protected override object Deserialize(System.Xml.Serialization.XmlSerializationReader reader) {
-            return ((XmlSerializationReader1)reader).Read16_XmlHelper();
+            return ((XmlSerializationReader1)reader).Read18_XmlHelper();
         }
     }
 
@@ -1409,11 +1591,11 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
         }
 
         protected override void Serialize(object objectToSerialize, System.Xml.Serialization.XmlSerializationWriter writer) {
-            ((XmlSerializationWriter1)writer).Write17_DataStoreInfo(objectToSerialize);
+            ((XmlSerializationWriter1)writer).Write19_DataStoreInfo(objectToSerialize);
         }
 
         protected override object Deserialize(System.Xml.Serialization.XmlSerializationReader reader) {
-            return ((XmlSerializationReader1)reader).Read17_DataStoreInfo();
+            return ((XmlSerializationReader1)reader).Read19_DataStoreInfo();
         }
     }
 
@@ -1424,11 +1606,11 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
         }
 
         protected override void Serialize(object objectToSerialize, System.Xml.Serialization.XmlSerializationWriter writer) {
-            ((XmlSerializationWriter1)writer).Write18_Thing(objectToSerialize);
+            ((XmlSerializationWriter1)writer).Write20_Thing(objectToSerialize);
         }
 
         protected override object Deserialize(System.Xml.Serialization.XmlSerializationReader reader) {
-            return ((XmlSerializationReader1)reader).Read18_Thing();
+            return ((XmlSerializationReader1)reader).Read20_Thing();
         }
     }
 
@@ -1439,11 +1621,11 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
         }
 
         protected override void Serialize(object objectToSerialize, System.Xml.Serialization.XmlSerializationWriter writer) {
-            ((XmlSerializationWriter1)writer).Write19_LstInstallationMaterial(objectToSerialize);
+            ((XmlSerializationWriter1)writer).Write21_LstInstallationMaterial(objectToSerialize);
         }
 
         protected override object Deserialize(System.Xml.Serialization.XmlSerializationReader reader) {
-            return ((XmlSerializationReader1)reader).Read19_LstInstallationMaterial();
+            return ((XmlSerializationReader1)reader).Read21_LstInstallationMaterial();
         }
     }
 
@@ -1454,11 +1636,11 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
         }
 
         protected override void Serialize(object objectToSerialize, System.Xml.Serialization.XmlSerializationWriter writer) {
-            ((XmlSerializationWriter1)writer).Write20_Item(objectToSerialize);
+            ((XmlSerializationWriter1)writer).Write22_Item(objectToSerialize);
         }
 
         protected override object Deserialize(System.Xml.Serialization.XmlSerializationReader reader) {
-            return ((XmlSerializationReader1)reader).Read20_Item();
+            return ((XmlSerializationReader1)reader).Read22_Item();
         }
     }
 
@@ -1469,11 +1651,11 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
         }
 
         protected override void Serialize(object objectToSerialize, System.Xml.Serialization.XmlSerializationWriter writer) {
-            ((XmlSerializationWriter1)writer).Write21_AreaController(objectToSerialize);
+            ((XmlSerializationWriter1)writer).Write23_AreaController(objectToSerialize);
         }
 
         protected override object Deserialize(System.Xml.Serialization.XmlSerializationReader reader) {
-            return ((XmlSerializationReader1)reader).Read21_AreaController();
+            return ((XmlSerializationReader1)reader).Read23_AreaController();
         }
     }
 
@@ -1484,11 +1666,11 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
         }
 
         protected override void Serialize(object objectToSerialize, System.Xml.Serialization.XmlSerializationWriter writer) {
-            ((XmlSerializationWriter1)writer).Write22_GeospatialDataController(objectToSerialize);
+            ((XmlSerializationWriter1)writer).Write24_GeospatialDataController(objectToSerialize);
         }
 
         protected override object Deserialize(System.Xml.Serialization.XmlSerializationReader reader) {
-            return ((XmlSerializationReader1)reader).Read22_GeospatialDataController();
+            return ((XmlSerializationReader1)reader).Read24_GeospatialDataController();
         }
     }
 
@@ -1499,11 +1681,41 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
         }
 
         protected override void Serialize(object objectToSerialize, System.Xml.Serialization.XmlSerializationWriter writer) {
-            ((XmlSerializationWriter1)writer).Write23_LocusController(objectToSerialize);
+            ((XmlSerializationWriter1)writer).Write25_LocusController(objectToSerialize);
         }
 
         protected override object Deserialize(System.Xml.Serialization.XmlSerializationReader reader) {
-            return ((XmlSerializationReader1)reader).Read23_LocusController();
+            return ((XmlSerializationReader1)reader).Read25_LocusController();
+        }
+    }
+
+    public sealed class LstArchitecturalConstructionStyleControllerSerializer : XmlSerializer1 {
+
+        public override System.Boolean CanDeserialize(System.Xml.XmlReader xmlReader) {
+            return xmlReader.IsStartElement(@"LstArchitecturalConstructionStyleController", @"");
+        }
+
+        protected override void Serialize(object objectToSerialize, System.Xml.Serialization.XmlSerializationWriter writer) {
+            ((XmlSerializationWriter1)writer).Write26_Item(objectToSerialize);
+        }
+
+        protected override object Deserialize(System.Xml.Serialization.XmlSerializationReader reader) {
+            return ((XmlSerializationReader1)reader).Read26_Item();
+        }
+    }
+
+    public sealed class LstArchitecturalConstructionSupportControllerSerializer : XmlSerializer1 {
+
+        public override System.Boolean CanDeserialize(System.Xml.XmlReader xmlReader) {
+            return xmlReader.IsStartElement(@"LstArchitecturalConstructionSupportController", @"");
+        }
+
+        protected override void Serialize(object objectToSerialize, System.Xml.Serialization.XmlSerializationWriter writer) {
+            ((XmlSerializationWriter1)writer).Write27_Item(objectToSerialize);
+        }
+
+        protected override object Deserialize(System.Xml.Serialization.XmlSerializationReader reader) {
+            return ((XmlSerializationReader1)reader).Read27_Item();
         }
     }
 
@@ -1514,11 +1726,11 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
         }
 
         protected override void Serialize(object objectToSerialize, System.Xml.Serialization.XmlSerializationWriter writer) {
-            ((XmlSerializationWriter1)writer).Write24_ObjectController(objectToSerialize);
+            ((XmlSerializationWriter1)writer).Write28_ObjectController(objectToSerialize);
         }
 
         protected override object Deserialize(System.Xml.Serialization.XmlSerializationReader reader) {
-            return ((XmlSerializationReader1)reader).Read24_ObjectController();
+            return ((XmlSerializationReader1)reader).Read28_ObjectController();
         }
     }
 
@@ -1529,11 +1741,11 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
         }
 
         protected override void Serialize(object objectToSerialize, System.Xml.Serialization.XmlSerializationWriter writer) {
-            ((XmlSerializationWriter1)writer).Write25_PotteryBucketController(objectToSerialize);
+            ((XmlSerializationWriter1)writer).Write29_PotteryBucketController(objectToSerialize);
         }
 
         protected override object Deserialize(System.Xml.Serialization.XmlSerializationReader reader) {
-            return ((XmlSerializationReader1)reader).Read25_PotteryBucketController();
+            return ((XmlSerializationReader1)reader).Read29_PotteryBucketController();
         }
     }
 
@@ -1544,11 +1756,11 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
         }
 
         protected override void Serialize(object objectToSerialize, System.Xml.Serialization.XmlSerializationWriter writer) {
-            ((XmlSerializationWriter1)writer).Write26_SiteController(objectToSerialize);
+            ((XmlSerializationWriter1)writer).Write30_SiteController(objectToSerialize);
         }
 
         protected override object Deserialize(System.Xml.Serialization.XmlSerializationReader reader) {
-            return ((XmlSerializationReader1)reader).Read26_SiteController();
+            return ((XmlSerializationReader1)reader).Read30_SiteController();
         }
     }
 
@@ -1559,11 +1771,11 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
         }
 
         protected override void Serialize(object objectToSerialize, System.Xml.Serialization.XmlSerializationWriter writer) {
-            ((XmlSerializationWriter1)writer).Write27_SquareController(objectToSerialize);
+            ((XmlSerializationWriter1)writer).Write31_SquareController(objectToSerialize);
         }
 
         protected override object Deserialize(System.Xml.Serialization.XmlSerializationReader reader) {
-            return ((XmlSerializationReader1)reader).Read27_SquareController();
+            return ((XmlSerializationReader1)reader).Read31_SquareController();
         }
     }
 
@@ -1574,11 +1786,11 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
         }
 
         protected override void Serialize(object objectToSerialize, System.Xml.Serialization.XmlSerializationWriter writer) {
-            ((XmlSerializationWriter1)writer).Write28_SupervisorController(objectToSerialize);
+            ((XmlSerializationWriter1)writer).Write32_SupervisorController(objectToSerialize);
         }
 
         protected override object Deserialize(System.Xml.Serialization.XmlSerializationReader reader) {
-            return ((XmlSerializationReader1)reader).Read28_SupervisorController();
+            return ((XmlSerializationReader1)reader).Read32_SupervisorController();
         }
     }
 
@@ -1589,11 +1801,11 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
         }
 
         protected override void Serialize(object objectToSerialize, System.Xml.Serialization.XmlSerializationWriter writer) {
-            ((XmlSerializationWriter1)writer).Write29_TeamController(objectToSerialize);
+            ((XmlSerializationWriter1)writer).Write33_TeamController(objectToSerialize);
         }
 
         protected override object Deserialize(System.Xml.Serialization.XmlSerializationReader reader) {
-            return ((XmlSerializationReader1)reader).Read29_TeamController();
+            return ((XmlSerializationReader1)reader).Read33_TeamController();
         }
     }
 
@@ -1605,20 +1817,22 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             get {
                 if (readMethods == null) {
                     System.Collections.Hashtable _tmp = new System.Collections.Hashtable();
-                    _tmp[@"XmlHelper::"] = @"Read16_XmlHelper";
-                    _tmp[@"NotebookLibrary.DataStoreInfo::"] = @"Read17_DataStoreInfo";
-                    _tmp[@"NotebookLibrary.Thing::"] = @"Read18_Thing";
-                    _tmp[@"NotebookLibrary.Models.LstInstallationMaterial::"] = @"Read19_LstInstallationMaterial";
-                    _tmp[@"NotebookLibrary.Models.LstInstallationMaterialQualifier::"] = @"Read20_Item";
-                    _tmp[@"NotebookLibrary.Controllers.AreaController::"] = @"Read21_AreaController";
-                    _tmp[@"NotebookLibrary.Controllers.GeospatialDataController::"] = @"Read22_GeospatialDataController";
-                    _tmp[@"NotebookLibrary.Controllers.LocusController::"] = @"Read23_LocusController";
-                    _tmp[@"NotebookLibrary.Controllers.ObjectController::"] = @"Read24_ObjectController";
-                    _tmp[@"NotebookLibrary.Controllers.PotteryBucketController::"] = @"Read25_PotteryBucketController";
-                    _tmp[@"NotebookLibrary.Controllers.SiteController::"] = @"Read26_SiteController";
-                    _tmp[@"NotebookLibrary.Controllers.SquareController::"] = @"Read27_SquareController";
-                    _tmp[@"NotebookLibrary.Controllers.SupervisorController::"] = @"Read28_SupervisorController";
-                    _tmp[@"NotebookLibrary.Controllers.TeamController::"] = @"Read29_TeamController";
+                    _tmp[@"XmlHelper::"] = @"Read18_XmlHelper";
+                    _tmp[@"NotebookLibrary.DataStoreInfo::"] = @"Read19_DataStoreInfo";
+                    _tmp[@"NotebookLibrary.Thing::"] = @"Read20_Thing";
+                    _tmp[@"NotebookLibrary.Models.LstInstallationMaterial::"] = @"Read21_LstInstallationMaterial";
+                    _tmp[@"NotebookLibrary.Models.LstInstallationMaterialQualifier::"] = @"Read22_Item";
+                    _tmp[@"NotebookLibrary.Controllers.AreaController::"] = @"Read23_AreaController";
+                    _tmp[@"NotebookLibrary.Controllers.GeospatialDataController::"] = @"Read24_GeospatialDataController";
+                    _tmp[@"NotebookLibrary.Controllers.LocusController::"] = @"Read25_LocusController";
+                    _tmp[@"NotebookLibrary.Controllers.LstArchitecturalConstructionStyleController::"] = @"Read26_Item";
+                    _tmp[@"NotebookLibrary.Controllers.LstArchitecturalConstructionSupportController::"] = @"Read27_Item";
+                    _tmp[@"NotebookLibrary.Controllers.ObjectController::"] = @"Read28_ObjectController";
+                    _tmp[@"NotebookLibrary.Controllers.PotteryBucketController::"] = @"Read29_PotteryBucketController";
+                    _tmp[@"NotebookLibrary.Controllers.SiteController::"] = @"Read30_SiteController";
+                    _tmp[@"NotebookLibrary.Controllers.SquareController::"] = @"Read31_SquareController";
+                    _tmp[@"NotebookLibrary.Controllers.SupervisorController::"] = @"Read32_SupervisorController";
+                    _tmp[@"NotebookLibrary.Controllers.TeamController::"] = @"Read33_TeamController";
                     if (readMethods == null) readMethods = _tmp;
                 }
                 return readMethods;
@@ -1629,20 +1843,22 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             get {
                 if (writeMethods == null) {
                     System.Collections.Hashtable _tmp = new System.Collections.Hashtable();
-                    _tmp[@"XmlHelper::"] = @"Write16_XmlHelper";
-                    _tmp[@"NotebookLibrary.DataStoreInfo::"] = @"Write17_DataStoreInfo";
-                    _tmp[@"NotebookLibrary.Thing::"] = @"Write18_Thing";
-                    _tmp[@"NotebookLibrary.Models.LstInstallationMaterial::"] = @"Write19_LstInstallationMaterial";
-                    _tmp[@"NotebookLibrary.Models.LstInstallationMaterialQualifier::"] = @"Write20_Item";
-                    _tmp[@"NotebookLibrary.Controllers.AreaController::"] = @"Write21_AreaController";
-                    _tmp[@"NotebookLibrary.Controllers.GeospatialDataController::"] = @"Write22_GeospatialDataController";
-                    _tmp[@"NotebookLibrary.Controllers.LocusController::"] = @"Write23_LocusController";
-                    _tmp[@"NotebookLibrary.Controllers.ObjectController::"] = @"Write24_ObjectController";
-                    _tmp[@"NotebookLibrary.Controllers.PotteryBucketController::"] = @"Write25_PotteryBucketController";
-                    _tmp[@"NotebookLibrary.Controllers.SiteController::"] = @"Write26_SiteController";
-                    _tmp[@"NotebookLibrary.Controllers.SquareController::"] = @"Write27_SquareController";
-                    _tmp[@"NotebookLibrary.Controllers.SupervisorController::"] = @"Write28_SupervisorController";
-                    _tmp[@"NotebookLibrary.Controllers.TeamController::"] = @"Write29_TeamController";
+                    _tmp[@"XmlHelper::"] = @"Write18_XmlHelper";
+                    _tmp[@"NotebookLibrary.DataStoreInfo::"] = @"Write19_DataStoreInfo";
+                    _tmp[@"NotebookLibrary.Thing::"] = @"Write20_Thing";
+                    _tmp[@"NotebookLibrary.Models.LstInstallationMaterial::"] = @"Write21_LstInstallationMaterial";
+                    _tmp[@"NotebookLibrary.Models.LstInstallationMaterialQualifier::"] = @"Write22_Item";
+                    _tmp[@"NotebookLibrary.Controllers.AreaController::"] = @"Write23_AreaController";
+                    _tmp[@"NotebookLibrary.Controllers.GeospatialDataController::"] = @"Write24_GeospatialDataController";
+                    _tmp[@"NotebookLibrary.Controllers.LocusController::"] = @"Write25_LocusController";
+                    _tmp[@"NotebookLibrary.Controllers.LstArchitecturalConstructionStyleController::"] = @"Write26_Item";
+                    _tmp[@"NotebookLibrary.Controllers.LstArchitecturalConstructionSupportController::"] = @"Write27_Item";
+                    _tmp[@"NotebookLibrary.Controllers.ObjectController::"] = @"Write28_ObjectController";
+                    _tmp[@"NotebookLibrary.Controllers.PotteryBucketController::"] = @"Write29_PotteryBucketController";
+                    _tmp[@"NotebookLibrary.Controllers.SiteController::"] = @"Write30_SiteController";
+                    _tmp[@"NotebookLibrary.Controllers.SquareController::"] = @"Write31_SquareController";
+                    _tmp[@"NotebookLibrary.Controllers.SupervisorController::"] = @"Write32_SupervisorController";
+                    _tmp[@"NotebookLibrary.Controllers.TeamController::"] = @"Write33_TeamController";
                     if (writeMethods == null) writeMethods = _tmp;
                 }
                 return writeMethods;
@@ -1654,18 +1870,20 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
                 if (typedSerializers == null) {
                     System.Collections.Hashtable _tmp = new System.Collections.Hashtable();
                     _tmp.Add(@"NotebookLibrary.Controllers.LocusController::", new LocusControllerSerializer());
-                    _tmp.Add(@"NotebookLibrary.Controllers.GeospatialDataController::", new GeospatialDataControllerSerializer());
-                    _tmp.Add(@"NotebookLibrary.Controllers.TeamController::", new TeamControllerSerializer());
                     _tmp.Add(@"NotebookLibrary.Thing::", new ThingSerializer());
-                    _tmp.Add(@"NotebookLibrary.Models.LstInstallationMaterial::", new LstInstallationMaterialSerializer());
-                    _tmp.Add(@"NotebookLibrary.Models.LstInstallationMaterialQualifier::", new LstInstallationMaterialQualifierSerializer());
+                    _tmp.Add(@"NotebookLibrary.Controllers.LstArchitecturalConstructionStyleController::", new LstArchitecturalConstructionStyleControllerSerializer());
                     _tmp.Add(@"NotebookLibrary.Controllers.PotteryBucketController::", new PotteryBucketControllerSerializer());
+                    _tmp.Add(@"NotebookLibrary.Controllers.SiteController::", new SiteControllerSerializer());
+                    _tmp.Add(@"NotebookLibrary.Controllers.GeospatialDataController::", new GeospatialDataControllerSerializer());
+                    _tmp.Add(@"NotebookLibrary.Models.LstInstallationMaterial::", new LstInstallationMaterialSerializer());
+                    _tmp.Add(@"NotebookLibrary.Controllers.SquareController::", new SquareControllerSerializer());
+                    _tmp.Add(@"NotebookLibrary.Controllers.AreaController::", new AreaControllerSerializer());
                     _tmp.Add(@"NotebookLibrary.Controllers.SupervisorController::", new SupervisorControllerSerializer());
                     _tmp.Add(@"XmlHelper::", new XmlHelperSerializer());
-                    _tmp.Add(@"NotebookLibrary.Controllers.AreaController::", new AreaControllerSerializer());
-                    _tmp.Add(@"NotebookLibrary.Controllers.SquareController::", new SquareControllerSerializer());
+                    _tmp.Add(@"NotebookLibrary.Models.LstInstallationMaterialQualifier::", new LstInstallationMaterialQualifierSerializer());
                     _tmp.Add(@"NotebookLibrary.DataStoreInfo::", new DataStoreInfoSerializer());
-                    _tmp.Add(@"NotebookLibrary.Controllers.SiteController::", new SiteControllerSerializer());
+                    _tmp.Add(@"NotebookLibrary.Controllers.LstArchitecturalConstructionSupportController::", new LstArchitecturalConstructionSupportControllerSerializer());
+                    _tmp.Add(@"NotebookLibrary.Controllers.TeamController::", new TeamControllerSerializer());
                     _tmp.Add(@"NotebookLibrary.Controllers.ObjectController::", new ObjectControllerSerializer());
                     if (typedSerializers == null) typedSerializers = _tmp;
                 }
@@ -1681,6 +1899,8 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             if (type == typeof(global::NotebookLibrary.Controllers.AreaController)) return true;
             if (type == typeof(global::NotebookLibrary.Controllers.GeospatialDataController)) return true;
             if (type == typeof(global::NotebookLibrary.Controllers.LocusController)) return true;
+            if (type == typeof(global::NotebookLibrary.Controllers.LstArchitecturalConstructionStyleController)) return true;
+            if (type == typeof(global::NotebookLibrary.Controllers.LstArchitecturalConstructionSupportController)) return true;
             if (type == typeof(global::NotebookLibrary.Controllers.ObjectController)) return true;
             if (type == typeof(global::NotebookLibrary.Controllers.PotteryBucketController)) return true;
             if (type == typeof(global::NotebookLibrary.Controllers.SiteController)) return true;
@@ -1698,6 +1918,8 @@ namespace Microsoft.Xml.Serialization.GeneratedAssembly {
             if (type == typeof(global::NotebookLibrary.Controllers.AreaController)) return new AreaControllerSerializer();
             if (type == typeof(global::NotebookLibrary.Controllers.GeospatialDataController)) return new GeospatialDataControllerSerializer();
             if (type == typeof(global::NotebookLibrary.Controllers.LocusController)) return new LocusControllerSerializer();
+            if (type == typeof(global::NotebookLibrary.Controllers.LstArchitecturalConstructionStyleController)) return new LstArchitecturalConstructionStyleControllerSerializer();
+            if (type == typeof(global::NotebookLibrary.Controllers.LstArchitecturalConstructionSupportController)) return new LstArchitecturalConstructionSupportControllerSerializer();
             if (type == typeof(global::NotebookLibrary.Controllers.ObjectController)) return new ObjectControllerSerializer();
             if (type == typeof(global::NotebookLibrary.Controllers.PotteryBucketController)) return new PotteryBucketControllerSerializer();
             if (type == typeof(global::NotebookLibrary.Controllers.SiteController)) return new SiteControllerSerializer();
