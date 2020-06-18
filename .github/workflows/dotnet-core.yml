@@ -1,4 +1,4 @@
-name: .NET Core
+name: Build .NET Core
 
 on:
   push:
@@ -13,6 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Super-Linter
+      uses: github/super-linter@v2.0.0
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
       with:
