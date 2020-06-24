@@ -10,20 +10,20 @@ USE [Archaeology]
 GO
 
 /*
-* 
+*
 * Create & fill all of the pick list tables first.
 * These tables are used as FK constraints throughout the database.
-* 
+*
 */
 
-PRINT('Creating LstArchitecturalConstructionStyle')
-CREATE TABLE dbo.[LstArchitecturalConstructionStyle] (
+PRINT('Creating tblLstArchitecturalConstructionStyle')
+CREATE TABLE dbo.[tblLstArchitecturalConstructionStyle] (
   [ID]          TINYINT       NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
   [Description] NVARCHAR(25)  NOT NULL  DEFAULT ('')
 )
 
-PRINT('INSERTING 10 values into LstArchitecturalConstructionStyle')
-INSERT INTO dbo.[LstArchitecturalConstructionStyle]([Description])
+PRINT('INSERTING 10 values into tblLstArchitecturalConstructionStyle')
+INSERT INTO dbo.[tblLstArchitecturalConstructionStyle]([Description])
 VALUES (''),
        ('Boulder & Chink'),
        ('Ashlar Fit'),
@@ -35,28 +35,28 @@ VALUES (''),
        ('Quoin & Pier'),
        ('Orthostat')
 
-PRINT('Creating LstArchitecturalConstructionSupport')
-CREATE TABLE dbo.[LstArchitecturalConstructionSupport] (
+PRINT('Creating tblLstArchitecturalConstructionSupport')
+CREATE TABLE dbo.[tblLstArchitecturalConstructionSupport] (
   [ID]          TINYINT       NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
   [Description] NVARCHAR(25)  NOT NULL  DEFAULT ('')
 )
 
-PRINT('Inserting 5 values into LstArchitecturalConstructionSupport')
-INSERT INTO dbo.[LstArchitecturalConstructionSupport]([Description])
+PRINT('Inserting 5 values into tblLstArchitecturalConstructionSupport')
+INSERT INTO dbo.[tblLstArchitecturalConstructionSupport]([Description])
 VALUES (''),
        ('Free-standing'),
        ('Buttressed'),
        ('Battered'),
        ('Foundation')
 
-PRINT('Creating LstArchitecturalDressing')
-CREATE TABLE dbo.[LstArchitecturalDressing] (
+PRINT('Creating tblLstArchitecturalDressing')
+CREATE TABLE dbo.[tblLstArchitecturalDressing] (
   [ID]          TINYINT       NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
   [Description] NVARCHAR(25)  NOT NULL  DEFAULT ('')
 )
 
-PRINT('Inserting 6 values into LstArchitecturalDressing')
-INSERT INTO dbo.[LstArchitecturalDressing]([Description])
+PRINT('Inserting 6 values into tblLstArchitecturalDressing')
+INSERT INTO dbo.[tblLstArchitecturalDressing]([Description])
 VALUES (''),
        ('Unhewn'),
        ('Semi-hewn'),
@@ -64,42 +64,42 @@ VALUES (''),
        ('Ashlar'),
        ('Bossed')
 
-PRINT('Creating LstArchitecturalFacing')
-CREATE TABLE dbo.[LstArchitecturalFacing] (
+PRINT('Creating tblLstArchitecturalFacing')
+CREATE TABLE dbo.[tblLstArchitecturalFacing] (
   [ID]          TINYINT       NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
   [Description] NVARCHAR(25)  NOT NULL  DEFAULT ('')
 )
 
-PRINT('Inserting 5 values into LstArchitecturalFacing')
-INSERT INTO dbo.[LstArchitecturalFacing]([Description])
+PRINT('Inserting 5 values into tblLstArchitecturalFacing')
+INSERT INTO dbo.[tblLstArchitecturalFacing]([Description])
 VALUES (''),
        ('Unfaced'),
        ('Plaster'),
        ('Mud'),
        ('Paint')
 
-PRINT('Creating LstArchitecturalMasonry')
-CREATE TABLE dbo.[LstArchitecturalMasonry] (
+PRINT('Creating tblLstArchitecturalMasonry')
+CREATE TABLE dbo.[tblLstArchitecturalMasonry] (
   [ID]          TINYINT       NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
   [Description] NVARCHAR(25)  NOT NULL  DEFAULT ('')
 )
 
-PRINT('Inserting 4 values into LstArchitecturalMasonry')
-INSERT INTO dbo.[LstArchitecturalMasonry]([Description])
+PRINT('Inserting 4 values into tblLstArchitecturalMasonry')
+INSERT INTO dbo.[tblLstArchitecturalMasonry]([Description])
 VALUES (''),
        ('Wall Stones'),
        ('Chinkstones'),
        ('Fillstones'),
        ('Brick')
 
-PRINT('Creating LstArchitecturalMasonryStones')
-CREATE TABLE dbo.[LstArchitecturalMasonryStones] (
+PRINT('Creating tblLstArchitecturalMasonryStones')
+CREATE TABLE dbo.[tblLstArchitecturalMasonryStones] (
   [ID]          TINYINT       NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
   [Description] NVARCHAR(25)  NOT NULL  DEFAULT ('')
 )
 
-PRINT('Inserting 6 values into LstArchitecturalMasonryStones')
-INSERT INTO dbo.[LstArchitecturalMasonryStones]([Description])
+PRINT('Inserting 6 values into tblLstArchitecturalMasonryStones')
+INSERT INTO dbo.[tblLstArchitecturalMasonryStones]([Description])
 VALUES (''),
        ('Cobble (6 - 25cm'),
        ('Small Boulder (25 - 50cm'),
@@ -107,14 +107,14 @@ VALUES (''),
        ('Large Boulder (75 - 100cm'),
        ('Very Large Boulder (>1m)')
 
-PRINT('Creating LstArchitecturalMaterial')
-CREATE TABLE dbo.[LstArchitecturalMaterial] (
+PRINT('Creating tblLstArchitecturalMaterial')
+CREATE TABLE dbo.[tblLstArchitecturalMaterial] (
   [ID]          TINYINT       NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
   [Description] NVARCHAR(25)  NOT NULL  DEFAULT ('')
 )
 
-PRINT('Inserting 6 values into LstArchitecturalMaterial')
-INSERT INTO dbo.[LstArchitecturalMaterial]([Description])
+PRINT('Inserting 6 values into tblLstArchitecturalMaterial')
+INSERT INTO dbo.[tblLstArchitecturalMaterial]([Description])
 VALUES (''),
        ('Limestone'),
        ('Chert'),
@@ -122,14 +122,14 @@ VALUES (''),
        ('Nari'),
        ('Mudbrick')
 
-PRINT('Creating LstArchitecturalMaterialQualifier')
-CREATE TABLE dbo.[LstArchitecturalMaterialQualifier] (
+PRINT('Creating tblLstArchitecturalMaterialQualifier')
+CREATE TABLE dbo.[tblLstArchitecturalMaterialQualifier] (
   [ID]          TINYINT       NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
   [Description] NVARCHAR(25)  NOT NULL  DEFAULT ('')
 )
 
-PRINT('Inserting 12 values into LstArchitecturalMaterialQualifier')
-INSERT INTO dbo.[LstArchitecturalMaterialQualifier]([Description])
+PRINT('Inserting 12 values into tblLstArchitecturalMaterialQualifier')
+INSERT INTO dbo.[tblLstArchitecturalMaterialQualifier]([Description])
 VALUES ('None'),
        ('Hard'),
        ('Soft'),
@@ -143,14 +143,14 @@ VALUES ('None'),
        ('Unbaked'),
        ('Burned')
 
-PRINT('Creating LstArchitecturalMortar')
-CREATE TABLE dbo.[LstArchitecturalMortar] (
+PRINT('Creating tblLstArchitecturalMortar')
+CREATE TABLE dbo.[tblLstArchitecturalMortar] (
   [ID]          TINYINT       NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
   [Description] NVARCHAR(25)  NOT NULL  DEFAULT ('')
 )
 
-PRINT('Inserting 7 values into LstArchitecturalMortar')
-INSERT INTO dbo.[LstArchitecturalMortar]([Description])
+PRINT('Inserting 7 values into tblLstArchitecturalMortar')
+INSERT INTO dbo.[tblLstArchitecturalMortar]([Description])
 VALUES (''),
        ('Dry-laid'),
        ('Clay'),
@@ -159,14 +159,14 @@ VALUES (''),
        ('Plaster'),
        ('Lime')
 
-PRINT('Creating LstArchitecturalPreservation')
-CREATE TABLE dbo.[LstArchitecturalPreservation] (
+PRINT('Creating tblLstArchitecturalPreservation')
+CREATE TABLE dbo.[tblLstArchitecturalPreservation] (
   [ID]          TINYINT       NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
   [Description] NVARCHAR(50)  NOT NULL  DEFAULT ('')
 )
 
-PRINT('Inserting 8 values into LstArchitecturalPreservation')
-INSERT INTO dbo.[LstArchitecturalPreservation]([Description])
+PRINT('Inserting 8 values into tblLstArchitecturalPreservation')
+INSERT INTO dbo.[tblLstArchitecturalPreservation]([Description])
 VALUES (''),
        ('Complete'),
        ('Partial Superstructure: Most'),
@@ -176,14 +176,14 @@ VALUES (''),
        ('Foundation Only: Partial'),
        ('Robbed')
 
-PRINT('Creating LstEarthConsistenceCompactness')
-CREATE TABLE dbo.[LstEarthConsistenceCompactness] (
+PRINT('Creating tblLstEarthConsistenceCompactness')
+CREATE TABLE dbo.[tblLstEarthConsistenceCompactness] (
   [ID]          TINYINT       NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
   [Description] NVARCHAR(25)  NOT NULL  DEFAULT ('')
 )
 
-PRINT('Inserting 19 values into LstEarthConsistenceCompactness')
-INSERT INTO dbo.[LstEarthConsistenceCompactness]([Description])
+PRINT('Inserting 19 values into tblLstEarthConsistenceCompactness')
+INSERT INTO dbo.[tblLstEarthConsistenceCompactness]([Description])
 VALUES (''),
        ('Loose (Very)'),
        ('Loose (Moderately)'),
@@ -204,14 +204,14 @@ VALUES (''),
        ('Rubbly (Moderately)'),
        ('Rubbly (Slightly)')
 
-PRINT('Creating LstEarthConsistenceHardness')
-CREATE TABLE dbo.[LstEarthConsistenceHardness] (
+PRINT('Creating tblLstEarthConsistenceHardness')
+CREATE TABLE dbo.[tblLstEarthConsistenceHardness] (
   [ID]          TINYINT       NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
   [Description] NVARCHAR(25)  NOT NULL  DEFAULT ('')
 )
 
-PRINT('Inserting 7 values into LstEarthConsistenceHardness')
-INSERT INTO dbo.[LstEarthConsistenceHardness]([Description])
+PRINT('Inserting 7 values into tblLstEarthConsistenceHardness')
+INSERT INTO dbo.[tblLstEarthConsistenceHardness]([Description])
 VALUES (''),
        ('Very Loose'),
        ('Loose'),
@@ -220,14 +220,14 @@ VALUES (''),
        ('Hard'),
        ('Very Hard')
 
-PRINT('Creating LstEarthConsistenceStructure')
-CREATE TABLE dbo.[LstEarthConsistenceStructure] (
+PRINT('Creating tblLstEarthConsistenceStructure')
+CREATE TABLE dbo.[tblLstEarthConsistenceStructure] (
   [ID]          TINYINT       NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
   [Description] NVARCHAR(25)  NOT NULL  DEFAULT ('')
 )
 
-PRINT('Inserting 7 values into LstEarthConsistenceStructure')
-INSERT INTO [LstEarthConsistenceStructure]([Description])
+PRINT('Inserting 7 values into tblLstEarthConsistenceStructure')
+INSERT INTO [tblLstEarthConsistenceStructure]([Description])
 VALUES (''),
        ('Puddling'),
        ('Channeling'),
@@ -236,14 +236,14 @@ VALUES (''),
        ('Talus'),
        ('Random')
 
-PRINT('Creating LstEarthConsistenceWetness')
-CREATE TABLE dbo.[LstEarthConsistenceWetness] (
+PRINT('Creating tblLstEarthConsistenceWetness')
+CREATE TABLE dbo.[tblLstEarthConsistenceWetness] (
   [ID]          TINYINT       NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
   [Description] NVARCHAR(25)  NOT NULL  DEFAULT ('')
 )
 
-PRINT('Inserting 10 values into LstEarthConsistenceWetness')
-INSERT INTO dbo.[LstEarthConsistenceWetness]([Description])
+PRINT('Inserting 10 values into tblLstEarthConsistenceWetness')
+INSERT INTO dbo.[tblLstEarthConsistenceWetness]([Description])
 VALUES (''),
        ('Dry (Very)'),
        ('Dry (Moderately)'),
@@ -255,14 +255,14 @@ VALUES (''),
        ('Wet (Moderately)'),
        ('Wet (Slightly)')
 
-PRINT('Creating LstEarthInclusionsArtifact')
-CREATE TABLE dbo.[LstEarthInclusionsArtifact] (
+PRINT('Creating tblLstEarthInclusionsArtifact')
+CREATE TABLE dbo.[tblLstEarthInclusionsArtifact] (
   [ID]          TINYINT       NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
   [Description] NVARCHAR(25)  NOT NULL  DEFAULT ('')
 )
 
-PRINT('Inserting 12 values into LstEarthInclusionsArtifact')
-INSERT INTO dbo.[LstEarthInclusionsArtifact]([Description])
+PRINT('Inserting 12 values into tblLstEarthInclusionsArtifact')
+INSERT INTO dbo.[tblLstEarthInclusionsArtifact]([Description])
 VALUES (''),
        ('Pottery'),
        ('Flint'),
@@ -276,69 +276,69 @@ VALUES (''),
        ('Unfired Clay'),
        ('Architectural Fragments')
 
-PRINT('Creating LstEarthInclusionsEarth')
-CREATE TABLE dbo.[LstEarthInclusionsEarth] (
+PRINT('Creating tblLstEarthInclusionsEarth')
+CREATE TABLE dbo.[tblLstEarthInclusionsEarth] (
   [ID]          TINYINT       NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
   [Description] NVARCHAR(25)  NOT NULL  DEFAULT ('')
 )
 
-PRINT('Inserting 5 values into LstEarthInclusionsEarth')
-INSERT INTO dbo.[LstEarthInclusionsEarth]([Description])
+PRINT('Inserting 5 values into tblLstEarthInclusionsEarth')
+INSERT INTO dbo.[tblLstEarthInclusionsEarth]([Description])
 VALUES (''),
        ('Nari Pockets'),
        ('Brick Material'),
        ('Pebble Pockets'),
        ('Ash Pockets')
 
-PRINT('Creating LstEarthInclusionsOrganic')
-CREATE TABLE dbo.[LstEarthInclusionsOrganic] (
+PRINT('Creating tblLstEarthInclusionsOrganic')
+CREATE TABLE dbo.[tblLstEarthInclusionsOrganic] (
   [ID]          TINYINT       NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
   [Description] NVARCHAR(25)  NOT NULL  DEFAULT ('')
 )
 
-PRINT('Inserting 5 values into LstEarthInclusionsOrganic')
-INSERT INTO dbo.[LstEarthInclusionsOrganic]([Description])
+PRINT('Inserting 5 values into tblLstEarthInclusionsOrganic')
+INSERT INTO dbo.[tblLstEarthInclusionsOrganic]([Description])
 VALUES (''),
        ('Bones'),
        ('Shells'),
        ('Carbonized Bits'),
        ('Organic Pockets')
 
-PRINT('Creating LstEarthInclusionsStone')
-CREATE TABLE dbo.[LstEarthInclusionsStone] (
+PRINT('Creating tblLstEarthInclusionsStone')
+CREATE TABLE dbo.[tblLstEarthInclusionsStone] (
   [ID]          TINYINT       NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
   [Description] NVARCHAR(25)  NOT NULL  DEFAULT ('')
 )
 
-PRINT('Inserting 4 values into LstEarthInclusionsStone')
-INSERT INTO dbo.[LstEarthInclusionsStone]([Description])
+PRINT('Inserting 4 values into tblLstEarthInclusionsStone')
+INSERT INTO dbo.[tblLstEarthInclusionsStone]([Description])
 VALUES (''),
        ('Pebbles (2mm - 6cm)'),
        ('Cobbles (6 - 25cm)'),
        ('Boulders (>25cm)')
 
-PRINT('Creating LstEarthParticleShape')
-CREATE TABLE dbo.[LstEarthParticleShape] (
+PRINT('Creating tblLstEarthParticleShape')
+CREATE TABLE dbo.[tblLstEarthParticleShape] (
   [ID]          TINYINT       NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
   [Description] NVARCHAR(25)  NOT NULL  DEFAULT ('')
 )
 
-PRINT('Inserting 5 rows into LstEarthParticleShape')
-INSERT INTO dbo.[LstEarthParticleShape]([Description])
+PRINT('Inserting 5 rows into tblLstEarthParticleShape')
+INSERT INTO dbo.[tblLstEarthParticleShape]([Description])
 VALUES (''),
        ('Angular'),
        ('Sub-Angular'),
        ('Sub-Round'),
        ('Round')
 
-PRINT('Creating LstEarthSurfaceMaterial')
-CREATE TABLE dbo.[LstEarthSurfaceMaterial] (
+PRINT('Creating tblLstEarthSurfaceMaterial')
+CREATE TABLE dbo.[tblLstEarthSurfaceMaterial] (
   [ID]          TINYINT       NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
   [Description] NVARCHAR(25)  NOT NULL  DEFAULT ('')
 )
 
-PRINT('Inserting 8 values into LstEarthSurfaceMaterial')
-INSERT INTO dbo.[LstEarthSurfaceMaterial]([Description])
+PRINT('Inserting 8 values into tblLstEarthSurfaceMaterial')
+INSERT INTO dbo.[tblLstEarthSurfaceMaterial]([Description])
 VALUES (''),
        ('Beaten Earth'),
        ('Lime'),
@@ -348,28 +348,28 @@ VALUES (''),
        ('Cobbles'),
        ('Flagstone')
 
-PRINT('Creating LstEarthTexture')
-CREATE TABLE dbo.[LstEarthTexture] (
+PRINT('Creating tblLstEarthTexture')
+CREATE TABLE dbo.[tblLstEarthTexture] (
   [ID]          TINYINT       NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
   [Description] NVARCHAR(50)  NOT NULL  DEFAULT ('')
 )
 
-PRINT('Inserting 5 rows into LstEarthTexture')
-INSERT INTO dbo.[LstEarthTexture]([Description])
+PRINT('Inserting 5 rows into tblLstEarthTexture')
+INSERT INTO dbo.[tblLstEarthTexture]([Description])
 VALUES (''),
        ('Sand - Sandy Loam'),
        ('Loam - Silt Loam'),
        ('Sandy Clay Loam - Silty Clay Loam'),
        ('Clay')
 
-PRINT('Creating LstInstallationMaterial')
-CREATE TABLE dbo.[LstInstallationMaterial] (
+PRINT('Creating tblLstInstallationMaterial')
+CREATE TABLE dbo.[tblLstInstallationMaterial] (
   [ID]          TINYINT       NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
   [Description] NVARCHAR(25)  NOT NULL  DEFAULT ('')
 )
 
-PRINT('Inserting 10 values into LstInstallationMaterial')
-INSERT INTO dbo.[LstInstallationMaterial]([Description])
+PRINT('Inserting 10 values into tblLstInstallationMaterial')
+INSERT INTO dbo.[tblLstInstallationMaterial]([Description])
 VALUES (''),
        ('Limestone'),
        ('Chert'),
@@ -382,14 +382,14 @@ VALUES (''),
        ('Stone'),
        ('Nari')
 
-PRINT('Creating LstInstallationMaterialQualifier')
-CREATE TABLE dbo.[LstInstallationMaterialQualifier] (
+PRINT('Creating tblLstInstallationMaterialQualifier')
+CREATE TABLE dbo.[tblLstInstallationMaterialQualifier] (
   [ID]          TINYINT       NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
   [Description] NVARCHAR(25)  NOT NULL  DEFAULT ('')
 )
 
-PRINT('Inserting 12 values into LstInstallationMaterialQualifier')
-INSERT INTO dbo.[LstInstallationMaterialQualifier]([Description])
+PRINT('Inserting 12 values into tblLstInstallationMaterialQualifier')
+INSERT INTO dbo.[tblLstInstallationMaterialQualifier]([Description])
 VALUES ('None'),
        ('Hard'),
        ('Soft'),
@@ -403,14 +403,14 @@ VALUES ('None'),
        ('Unbaked'),
        ('Burned')
 
-PRINT('Creating LstInstallationPlan')
-CREATE TABLE dbo.[LstInstallationPlan] (
+PRINT('Creating tblLstInstallationPlan')
+CREATE TABLE dbo.[tblLstInstallationPlan] (
   [ID]          TINYINT       NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
   [Description] NVARCHAR(25)  NOT NULL  DEFAULT ('')
 )
 
-PRINT('Inserting 9 values into LstInstallationPlan')
-INSERT INTO dbo.[LstInstallationPlan]([Description])
+PRINT('Inserting 9 values into tblLstInstallationPlan')
+INSERT INTO dbo.[tblLstInstallationPlan]([Description])
 VALUES (''),
        ('Linear'),
        ('Curvilinear'),
@@ -421,28 +421,28 @@ VALUES (''),
        ('Oval'),
        ('Irregular')
 
-PRINT('Creating LstInstallationPlanQualifier')
-CREATE TABLE dbo.[LstInstallationPlanQualifier] (
+PRINT('Creating tblLstInstallationPlanQualifier')
+CREATE TABLE dbo.[tblLstInstallationPlanQualifier] (
   [ID]          TINYINT       NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
   [Description] NVARCHAR(25)  NOT NULL  DEFAULT ('')
 )
 
-PRINT('Inserting 5 values into LstInstallationPlanQualifier')
-INSERT INTO dbo.[LstInstallationPlanQualifier]([Description])
+PRINT('Inserting 5 values into tblLstInstallationPlanQualifier')
+INSERT INTO dbo.[tblLstInstallationPlanQualifier]([Description])
 VALUES ('None'),
        ('Rounded'),
        ('Squared'),
        ('Nearly'),
        ('Slightly')
 
-PRINT('Creating LstInstallationType')
-CREATE TABLE dbo.[LstInstallationType] (
+PRINT('Creating tblLstInstallationType')
+CREATE TABLE dbo.[tblLstInstallationType] (
   [ID]          TINYINT       NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
   [Description] NVARCHAR(25)  NOT NULL  DEFAULT ('')
 )
 
-PRINT('Inserting 13 values into LstInstallationType')
-INSERT INTO dbo.[LstInstallationType]([Description])
+PRINT('Inserting 13 values into tblLstInstallationType')
+INSERT INTO dbo.[tblLstInstallationType]([Description])
 VALUES (''),
        ('Pit'),
        ('Silo'),
@@ -457,27 +457,27 @@ VALUES (''),
        ('Robber Trench'),
        ('Unknown')
 
-PRINT('Creating LstInstallationTypeCertainty')
-CREATE TABLE dbo.[LstInstallationTypeCertainty] (
+PRINT('Creating tblLstInstallationTypeCertainty')
+CREATE TABLE dbo.[tblLstInstallationTypeCertainty] (
   [ID]          TINYINT       NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
   [Description] NVARCHAR(25)  NOT NULL  DEFAULT ('')
 )
 
-PRINT('Inserting 4 values into LstInstallationTypeCertainty')
-INSERT INTO dbo.[LstInstallationTypeCertainty]([Description])
+PRINT('Inserting 4 values into tblLstInstallationTypeCertainty')
+INSERT INTO dbo.[tblLstInstallationTypeCertainty]([Description])
 VALUES (''),
        ('Certain'),
        ('Probable'),
        ('Possible')
 
-PRINT('Creating LstLocusSeparationClarity')
-CREATE TABLE dbo.[LstLocusSeparationClarity] (
+PRINT('Creating tblLstLocusSeparationClarity')
+CREATE TABLE dbo.[tblLstLocusSeparationClarity] (
   [ID]          TINYINT       NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
   [Description] NVARCHAR(25)  NOT NULL  DEFAULT ('')
 )
 
-PRINT('Inserting 7 rows into LstLocusSeparationClarity')
-INSERT INTO dbo.[LstLocusSeparationClarity]([Description])
+PRINT('Inserting 7 rows into tblLstLocusSeparationClarity')
+INSERT INTO dbo.[tblLstLocusSeparationClarity]([Description])
 VALUES (''),
        ('Very Clear'),
        ('Clear'),
@@ -486,8 +486,8 @@ VALUES (''),
        ('Very Unclear'),
        ('Arbitrary')
 
-PRINT('Creating LstMunselNumber')
-CREATE TABLE dbo.[LstMunsellNumber] (
+PRINT('Creating tblLstMunselNumber')
+CREATE TABLE dbo.[tblLstMunsellNumber] (
   [ID]          SMALLINT      NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
   [Hue]         NVARCHAR(10)  NOT NULL  DEFAULT (''),
   [Value]       NVARCHAR(10)  NOT NULL  DEFAULT (''),
@@ -495,8 +495,8 @@ CREATE TABLE dbo.[LstMunsellNumber] (
   [Description] NVARCHAR(50)  NOT NULL  DEFAULT ('')
 )
 
-PRINT('Inserting 323 rows into LstMunsellNumber')
-INSERT INTO dbo.[LstMunsellNumber]([Hue], [Value], [Chroma], [Description])
+PRINT('Inserting 323 rows into tblLstMunsellNumber')
+INSERT INTO dbo.[tblLstMunsellNumber]([Hue], [Value], [Chroma], [Description])
 VALUES (     '',    '',     '', ''),
        ('GLEY1',   '8',    'N', 'White'),
        ('GLEY1',   '8',  '10Y', 'Light Greenish Gray'),
@@ -821,8 +821,8 @@ VALUES (     '',    '',     '', ''),
        ('   5Y', '2.5',    '1', 'Black'),
        ('   5Y', '2.5',    '2', 'Black')
 
-PRINT('Creating LstStratigraphicRelationship')
-CREATE TABLE dbo.[LstStratigraphicRelationship] (
+PRINT('Creating tblLstStratigraphicRelationship')
+CREATE TABLE dbo.[tblLstStratigraphicRelationship] (
   [ID]            TINYINT       NOT NULL  IDENTITY(0,1) PRIMARY KEY CLUSTERED,
   [Description]   NVARCHAR(50)  NOT NULL  DEFAULT (''),
   [Architectural] BIT           NOT NULL  DEFAULT ((0)),
@@ -830,8 +830,8 @@ CREATE TABLE dbo.[LstStratigraphicRelationship] (
   [Installation]  BIT           NOT NULL  DEFAULT ((0))
 )
 
-PRINT('Inserting 14 values into LstStratigraphicRelationship')
-INSERT INTO dbo.[LstStratigraphicRelationship]([Description], [Architectural], [Earth], [Installation])
+PRINT('Inserting 14 values into tblLstStratigraphicRelationship')
+INSERT INTO dbo.[tblLstStratigraphicRelationship]([Description], [Architectural], [Earth], [Installation])
 VALUES ('',                             1, 1, 1),
        ('Under',                        1, 1, 1),
        ('Over',                         1, 1, 1),
@@ -848,42 +848,42 @@ VALUES ('',                             1, 1, 1),
        ('Fill Loci',                    0, 0, 1)
 
 /*
-* 
+*
 * Create the rest of the tables.
 * These tables are created in order of their FK contraint requirements.
-* 
+*
 */
 
 PRINT('Creating the rest of the tables')
-CREATE TABLE dbo.[Site] (
+CREATE TABLE dbo.[tblSite] (
   [ID]              UNIQUEIDENTIFIER  NOT NULL  DEFAULT (NEWID()) PRIMARY KEY CLUSTERED,
   [ShortName]       NVARCHAR(50)      NOT NULL  DEFAULT (''),
   [FullName]        NVARCHAR(250)     NOT NULL  DEFAULT (''),
   [PublicationName] NVARCHAR(500)     NOT NULL  DEFAULT ('')
 );
 
-CREATE TABLE dbo.[Area] (
+CREATE TABLE dbo.[tblArea] (
   [ID]        UNIQUEIDENTIFIER  NOT NULL  DEFAULT NEWID() PRIMARY KEY CLUSTERED,
   [SiteID]    UNIQUEIDENTIFIER  NOT NULL
-    FOREIGN KEY ([SiteID]) REFERENCES [Site]([ID]),
+    FOREIGN KEY ([SiteID]) REFERENCES [tblSite]([ID]),
   [Name]      NVARCHAR(50)      NOT NULL  DEFAULT (''),
   [Objective] NVARCHAR(1000)    NOT NULL  DEFAULT ('')
 )
 
-CREATE TABLE dbo.[Team] (
+CREATE TABLE dbo.[tblTeam] (
   [ID]    UNIQUEIDENTIFIER  NOT NULL  DEFAULT NEWID() PRIMARY KEY CLUSTERED,
   [Name]  NVARCHAR(100)     NOT NULL  DEFAULT ('')
 )
 
-CREATE TABLE dbo.[AscAreaTeam] (
+CREATE TABLE dbo.[tblAscAreaTeam] (
   [ID]      UNIQUEIDENTIFIER  NOT NULL  DEFAULT NEWID() PRIMARY KEY CLUSTERED,
   [AreaID]  UNIQUEIDENTIFIER  NOT NULL
-    FOREIGN KEY ([AreaID]) REFERENCES [Area]([ID]),
+    FOREIGN KEY ([AreaID]) REFERENCES [tblArea]([ID]),
   [TeamID]  UNIQUEIDENTIFIER  NOT NULL
-    FOREIGN KEY ([TeamID]) REFERENCES [Team]([ID])
+    FOREIGN KEY ([TeamID]) REFERENCES [tblTeam]([ID])
 )
 
-CREATE TABLE dbo.[Supervisor] (
+CREATE TABLE dbo.[tblSupervisor] (
   [ID]          UNIQUEIDENTIFIER  NOT NULL  DEFAULT NEWID() PRIMARY KEY CLUSTERED,
   [FirstName]   NVARCHAR(50)      NOT NULL  DEFAULT (''),
   [MiddleName]  NVARCHAR(50)      NOT NULL  DEFAULT (''),
@@ -891,30 +891,30 @@ CREATE TABLE dbo.[Supervisor] (
   [Initials]    NVARCHAR(3)       NOT NULL  DEFAULT (''),
   [Email]       NVARCHAR(100)     NOT NULL  DEFAULT (''),
   [TeamID]      UNIQUEIDENTIFIER  NOT NULL
-    FOREIGN KEY ([TeamID]) REFERENCES [Team]([ID])
+    FOREIGN KEY ([TeamID]) REFERENCES [tblTeam]([ID])
 )
 
-CREATE TABLE dbo.[Square] (
+CREATE TABLE dbo.[tblSquare] (
   [ID]            UNIQUEIDENTIFIER  NOT NULL  DEFAULT NEWID() PRIMARY KEY CLUSTERED,
-  [AreaID]        UNIQUEIDENTIFIER  NOT NULL  
-    FOREIGN KEY ([AreaID]) REFERENCES [Area]([ID]),
+  [AreaID]        UNIQUEIDENTIFIER  NOT NULL
+    FOREIGN KEY ([AreaID]) REFERENCES [tblArea]([ID]),
   [Name]          NVARCHAR(10)      NOT NULL  DEFAULT (''),
   [SupervisorID]  UNIQUEIDENTIFIER  NOT NULL
-    FOREIGN KEY ([SupervisorID]) REFERENCES [Supervisor]([ID]),
+    FOREIGN KEY ([SupervisorID]) REFERENCES [tblSupervisor]([ID]),
   [Coordinates]   GEOGRAPHY         NULL
 )
 
-CREATE TABLE dbo.[Locus] (
+CREATE TABLE dbo.[tblLocus] (
   [ID]                  UNIQUEIDENTIFIER  NOT NULL  DEFAULT NEWID() PRIMARY KEY CLUSTERED,
   [SquareID]            UNIQUEIDENTIFIER  NOT NULL
-    FOREIGN KEY ([SquareID]) REFERENCES [Square]([ID]),
+    FOREIGN KEY ([SquareID]) REFERENCES [tblSquare]([ID]),
   [Number]              INTEGER           NOT NULL,
   [DateOpened]          DATE              NULL      DEFAULT GETDATE(),
   [DateClosed]          DATE              NULL,
   [Designation]         NVARCHAR(250)     NOT NULL  DEFAULT (''),
   [Reason]              NVARCHAR(250)     NOT NULL  DEFAULT (''),
   [SeparationClarityID] TINYINT           NOT NULL  DEFAULT ((0))
-    FOREIGN KEY ([SeparationClarityID]) REFERENCES [LstLocusSeparationClarity]([ID]),
+    FOREIGN KEY ([SeparationClarityID]) REFERENCES [tblLstLocusSeparationClarity]([ID]),
   [Function]            NVARCHAR(1000)    NOT NULL  DEFAULT (''),
   [Stratigraphy]        NVARCHAR(1000)    NOT NULL  DEFAULT (''),
   [CleanLocus]          BIT               NOT NULL  DEFAULT ((0)),
@@ -923,19 +923,19 @@ CREATE TABLE dbo.[Locus] (
   [Stratum]             NVARCHAR(250)     NOT NULL  DEFAULT ('')
 )
 
-CREATE TABLE dbo.[LocusDescriptionArchitecture] (
+CREATE TABLE dbo.[tblLocusDescriptionArchitecture] (
   [ID]                                  UNIQUEIDENTIFIER  NOT NULL  DEFAULT NEWID() PRIMARY KEY CLUSTERED,
   [LocusID]                             UNIQUEIDENTIFIER  NOT NULL
-    CONSTRAINT [UQ_LocusDescriptionArchitecture_LocusID] UNIQUE([LocusID])
+    CONSTRAINT [UQ_LocusDescriptionArchitecture_LocusID] UNIQUE([tblLocusID])
     FOREIGN KEY ([LocusID]) REFERENCES [Locus]([ID]),
   [ToolingWidth]                        DECIMAL(4,3)      NOT NULL  DEFAULT ((0.000)),
   [ToolingLength]                       DECIMAL(4,3)      NOT NULL  DEFAULT ((0.000)),
   [ToolingDepth]                        DECIMAL(4,3)      NOT NULL  DEFAULT ((0.000)),
   [ToolingPhoto]                        BIT               NOT NULL  DEFAULT ((0)),
   [ArchitecturalConstructionStyleID]    TINYINT           NOT NULL  DEFAULT ((0))
-    FOREIGN KEY ([ArchitecturalConstructionStyleID]) REFERENCES [LstArchitecturalConstructionStyle]([ID]),
+    FOREIGN KEY ([ArchitecturalConstructionStyleID]) REFERENCES [tblLstArchitecturalConstructionStyle]([ID]),
   [ArchitecturalConstructionSupportID]  TINYINT           NOT NULL  DEFAULT ((0))
-    FOREIGN KEY ([ArchitecturalConstructionSupportID]) REFERENCES [LstArchitecturalConstructionSupport]([ID]),
+    FOREIGN KEY ([ArchitecturalConstructionSupportID]) REFERENCES [tblLstArchitecturalConstructionSupport]([ID]),
   [ArchitecturalRemarks]                NVARCHAR(250)     NOT NULL  DEFAULT (''),
   [ArthitecturalTendencies]             NVARCHAR(250)     NOT NULL  DEFAULT (''),
   [CoursesMinimum]                      TINYINT           NOT NULL  DEFAULT ((0)),
@@ -952,36 +952,36 @@ CREATE TABLE dbo.[LocusDescriptionArchitecture] (
   [Orientation]                         SMALLINT          NOT NULL  DEFAULT ((0)),
   [Dip]                                 SMALLINT          NOT NULL  DEFAULT ((0)),
   [ArchitecturalPreservationID]         TINYINT           NOT NULL  DEFAULT ((0))
-    FOREIGN KEY ([ArchitecturalPreservationID]) REFERENCES [LstArchitecturalPreservation]([ID]),
+    FOREIGN KEY ([ArchitecturalPreservationID]) REFERENCES [tblLstArchitecturalPreservation]([ID]),
   [LeanDirection]                       SMALLINT          NOT NULL  DEFAULT ((0)),
   [LeanDegree]                          SMALLINT          NOT NULL  DEFAULT ((0)),
   [Remarks]                             NVARCHAR(1000)    NOT NULL  DEFAULT ('')
 )
 
-CREATE TABLE dbo.[LocusDescriptionArchitectureMaterial] (
+CREATE TABLE dbo.[tblLocusDescriptionArchitectureMaterial] (
   [ID]                                UNIQUEIDENTIFIER  NOT NULL  DEFAULT NEWID() PRIMARY KEY CLUSTERED,
   [LocusDescriptionArchitectureID]    UNIQUEIDENTIFIER  NOT NULL
-    FOREIGN KEY ([LocusDescriptionArchitectureID]) REFERENCES [LocusDescriptionArchitecture]([ID]),
+    FOREIGN KEY ([LocusDescriptionArchitectureID]) REFERENCES [tblLocusDescriptionArchitecture]([ID]),
   [ArchitecturalMaterialID]           TINYINT           NOT NULL  DEFAULT ((0))
     CONSTRAINT [UQ_LocusDescriptionArchitectureMaterial_LocusDescriptionArchitectureID_ArchitecturalMaterialID]
       UNIQUE([LocusDescriptionArchitectureID], [ArchitecturalMaterialID])
-    FOREIGN KEY ([ArchitecturalMaterialID]) REFERENCES [LstArchitecturalMaterial]([ID]),
+    FOREIGN KEY ([ArchitecturalMaterialID]) REFERENCES [tblLstArchitecturalMaterial]([ID]),
   [ArchitecturalMaterialQualifierID]  TINYINT           NOT NULL  DEFAULT ((0))
-    FOREIGN KEY ([ArchitecturalMaterialQualifierID]) REFERENCES [LstArchitecturalMaterialQualifier]([ID]),
+    FOREIGN KEY ([ArchitecturalMaterialQualifierID]) REFERENCES [tblLstArchitecturalMaterialQualifier]([ID]),
   [Percentage]                        TINYINT           NOT NULL  DEFAULT ((0)),
   [Remarks]                           NVARCHAR(250)     NOT NULL  DEFAULT ('')
 )
 
-CREATE TABLE dbo.[LocusDescriptionArchitectureMasonry] (
+CREATE TABLE dbo.[tblLocusDescriptionArchitectureMasonry] (
   [ID]                              UNIQUEIDENTIFIER  NOT NULL  DEFAULT NEWID() PRIMARY KEY CLUSTERED,
   [LocusDescriptionArchitectureID]  UNIQUEIDENTIFIER  NOT NULL
-    FOREIGN KEY ([LocusDescriptionArchitectureID]) REFERENCES [LocusDescriptionArchitecture]([ID]),
+    FOREIGN KEY ([LocusDescriptionArchitectureID]) REFERENCES [tblLocusDescriptionArchitecture]([ID]),
   [ArchitecturalMasonryID]          TINYINT           NOT NULL  DEFAULT ((0))
-    FOREIGN KEY ([ArchitecturalMasonryID]) REFERENCES [LstArchitecturalMasonry]([ID]),
+    FOREIGN KEY ([ArchitecturalMasonryID]) REFERENCES [tblLstArchitecturalMasonry]([ID]),
   [ArchitecturalMasonryStonesID]    TINYINT           NOT NULL  DEFAULT ((0))
     CONSTRAINT [UQ_LocusDescriptionArchitectureMasonry_LocusDescriptionArchitectureID_ArchitecturalMasonryID]
       UNIQUE([LocusDescriptionArchitectureID], [ArchitecturalMasonryID], [ArchitecturalMasonryStonesID])
-    FOREIGN KEY ([ArchitecturalMasonryStonesID]) REFERENCES [LstArchitecturalMasonryStones]([ID]),
+    FOREIGN KEY ([ArchitecturalMasonryStonesID]) REFERENCES [tblLstArchitecturalMasonryStones]([ID]),
   [BrickLengthMinimum]              DECIMAL(4,3)      NOT NULL  DEFAULT ((0.000)),
   [BrickLengthMaximum]              DECIMAL(4,3)      NOT NULL  DEFAULT ((0.000)),
   [BrickWidthMinimum]               DECIMAL(4,3)      NOT NULL  DEFAULT ((0.000)),
@@ -992,62 +992,62 @@ CREATE TABLE dbo.[LocusDescriptionArchitectureMasonry] (
   [Remarks]                         NVARCHAR(250)     NOT NULL  DEFAULT ('')
 )
 
-CREATE TABLE dbo.[LocusDescriptionArchitectureDressing] (
+CREATE TABLE dbo.[tblLocusDescriptionArchitectureDressing] (
   [ID]                              UNIQUEIDENTIFIER  NOT NULL  DEFAULT NEWID() PRIMARY KEY CLUSTERED,
   [LocusDescriptionArchitectureID]  UNIQUEIDENTIFIER  NOT NULL
-    FOREIGN KEY ([LocusDescriptionArchitectureID]) REFERENCES [LocusDescriptionArchitecture]([ID]),
+    FOREIGN KEY ([LocusDescriptionArchitectureID]) REFERENCES [tblLocusDescriptionArchitecture]([ID]),
   [ArchitecturalDressingID]         TINYINT           NOT NULL  DEFAULT ((0))
     CONSTRAINT [UQ_LocusDescriptionArchitectureMaterial_LocusDescriptionArchitectureID_ArchitecturalDressingID]
       UNIQUE([LocusDescriptionArchitectureID], [ArchitecturalDressingID])
-    FOREIGN KEY ([ArchitecturalDressingID]) REFERENCES [LstArchitecturalDressing]([ID]),
+    FOREIGN KEY ([ArchitecturalDressingID]) REFERENCES [tblLstArchitecturalDressing]([ID]),
   [Percentage]                      TINYINT           NOT NULL  DEFAULT ((0)),
   [Remarks]                         NVARCHAR(250)     NOT NULL  DEFAULT ('')
 )
 
-CREATE TABLE dbo.[LocusDescriptionArchitectureMortar] (
+CREATE TABLE dbo.[tblLocusDescriptionArchitectureMortar] (
   [ID]                              UNIQUEIDENTIFIER  NOT NULL  DEFAULT NEWID() PRIMARY KEY CLUSTERED,
   [LocusDescriptionArchitectureID]  UNIQUEIDENTIFIER  NOT NULL
-    FOREIGN KEY ([LocusDescriptionArchitectureID]) REFERENCES [LocusDescriptionArchitecture]([ID]),
+    FOREIGN KEY ([LocusDescriptionArchitectureID]) REFERENCES [tblLocusDescriptionArchitecture]([ID]),
   [ArchitecturalMortarID]           TINYINT           NOT NULL  DEFAULT ((0))
     CONSTRAINT [UQ_LocusDescriptionArchitectureMaterial_LocusDescriptionArchitectureID_ArchitecturalMortarID]
       UNIQUE([LocusDescriptionArchitectureID], [ArchitecturalMortarID])
-    FOREIGN KEY ([ArchitecturalMortarID]) REFERENCES [LstArchitecturalMortar]([ID]),
+    FOREIGN KEY ([ArchitecturalMortarID]) REFERENCES [tblLstArchitecturalMortar]([ID]),
   [Percentage]                      TINYINT           NOT NULL  DEFAULT ((0)),
   [AverageThickness]                TINYINT           NOT NULL  DEFAULT ((0)),
   [Remarks]                         NVARCHAR(250)     NOT NULL  DEFAULT ('')
 )
 
-CREATE TABLE dbo.[LocusDescriptionArchitectureFacing] (
+CREATE TABLE dbo.[tblLocusDescriptionArchitectureFacing] (
   [ID]                              UNIQUEIDENTIFIER  NOT NULL  DEFAULT NEWID() PRIMARY KEY CLUSTERED,
   [LocusDescriptionArchitectureID]  UNIQUEIDENTIFIER  NOT NULL
-    FOREIGN KEY ([LocusDescriptionArchitectureID]) REFERENCES [LocusDescriptionArchitecture]([ID]),
+    FOREIGN KEY ([LocusDescriptionArchitectureID]) REFERENCES [tblLocusDescriptionArchitecture]([ID]),
   [ArchitecturalFacingID]           TINYINT           NOT NULL  DEFAULT ((0))
     CONSTRAINT [UQ_LocusDescriptionArchitectureMaterial_LocusDescriptionArchitectureID_ArchitecturalFacingID]
       UNIQUE([LocusDescriptionArchitectureID], [ArchitecturalFacingID])
-    FOREIGN KEY ([ArchitecturalFacingID]) REFERENCES [LstArchitecturalFacing]([ID]),
+    FOREIGN KEY ([ArchitecturalFacingID]) REFERENCES [tblLstArchitecturalFacing]([ID]),
   [Percentage]                      TINYINT           NOT NULL  DEFAULT ((0)),
   [MunselNumberID]                  SMALLINT          NOT NULL  DEFAULT ((0))
-    FOREIGN KEY ([MunselNumberID]) REFERENCES [LstMunsellNumber]([ID]),
+    FOREIGN KEY ([MunselNumberID]) REFERENCES [tblLstMunsellNumber]([ID]),
   [Remarks]                         NVARCHAR(250)     NOT NULL  DEFAULT ('')
 )
 
-CREATE TABLE dbo.[LocusDescriptionEarth] (
+CREATE TABLE dbo.[tblLocusDescriptionEarth] (
   [ID]                        UNIQUEIDENTIFIER  NOT NULL  DEFAULT NEWID() PRIMARY KEY CLUSTERED,
   [LocusID]                   UNIQUEIDENTIFIER  NOT NULL
-    CONSTRAINT [UQ_LocusDescriptionEarth_LocusID] UNIQUE([LocusID])
-    FOREIGN KEY ([LocusID]) REFERENCES [Locus]([ID]),
+    CONSTRAINT [UQ_LocusDescriptionEarth_LocusID] UNIQUE([tblLocusID])
+    FOREIGN KEY ([LocusID]) REFERENCES [tblLocus]([ID]),
   [MunselNumberID]            SMALLINT          NOT NULL  DEFAULT ((0))
-    FOREIGN KEY ([MunselNumberID]) REFERENCES [LstMunsellNumber]([ID]),
+    FOREIGN KEY ([MunselNumberID]) REFERENCES [tblLstMunsellNumber]([ID]),
   [TextureID]                 TINYINT           NOT NULL  DEFAULT ((0))
-    FOREIGN KEY ([TextureID]) REFERENCES [LstEarthTexture]([ID]),
+    FOREIGN KEY ([TextureID]) REFERENCES [tblLstEarthTexture]([ID]),
   [ConsistenceHardnessID]     TINYINT           NOT NULL  DEFAULT ((0))
-    FOREIGN KEY ([ConsistenceHardnessID]) REFERENCES [LstEarthConsistenceHardness]([ID]),
+    FOREIGN KEY ([ConsistenceHardnessID]) REFERENCES [tblLstEarthConsistenceHardness]([ID]),
   [ConsistenceCompactnessID]  TINYINT           NOT NULL  DEFAULT ((0))
-    FOREIGN KEY ([ConsistenceCompactnessID]) REFERENCES [LstEarthConsistenceCompactness]([ID]),
+    FOREIGN KEY ([ConsistenceCompactnessID]) REFERENCES [tblLstEarthConsistenceCompactness]([ID]),
   [ConsistenceWetnessID]      TINYINT           NOT NULL  DEFAULT ((0))
-    FOREIGN KEY ([ConsistenceWetnessID]) REFERENCES [LstEarthConsistenceWetness]([ID]),
+    FOREIGN KEY ([ConsistenceWetnessID]) REFERENCES [tblLstEarthConsistenceWetness]([ID]),
   [ConsistenceStructureID]    TINYINT           NOT NULL  DEFAULT ((0))
-    FOREIGN KEY ([ConsistenceStructureID]) REFERENCES [LstEarthConsistenceStructure]([ID]),
+    FOREIGN KEY ([ConsistenceStructureID]) REFERENCES [tblLstEarthConsistenceStructure]([ID]),
   [LengthMinimum]             DECIMAL(4,3)      NOT NULL  DEFAULT ((0.000)),
   [LengthMaximum]             DECIMAL(4,3)      NOT NULL  DEFAULT ((0.000)),
   [WidthMinimum]              DECIMAL(4,3)      NOT NULL  DEFAULT ((0.000)),
@@ -1057,88 +1057,88 @@ CREATE TABLE dbo.[LocusDescriptionEarth] (
   [DownslopeDirection]        SMALLINT          NOT NULL  DEFAULT ((0)),
   [DegreeOfSlope]             SMALLINT          NOT NULL  DEFAULT ((0)),
   [SurfaceMaterialID]         TINYINT           NOT NULL  DEFAULT ((0))
-    FOREIGN KEY ([SurfaceMaterialID]) REFERENCES [LstEarthSurfaceMaterial]([ID]),
+    FOREIGN KEY ([SurfaceMaterialID]) REFERENCES [tblLstEarthSurfaceMaterial]([ID]),
   [AverageSiftRatio]          TINYINT           NOT NULL  DEFAULT ((1)),
   [Remarks]                   NVARCHAR(1000)    NOT NULL  DEFAULT ('')
 )
 
-CREATE TABLE dbo.[LocusDescriptionEarthParticleShape] (
+CREATE TABLE dbo.[tblLocusDescriptionEarthParticleShape] (
   [ID]                      UNIQUEIDENTIFIER  NOT NULL  DEFAULT NEWID() PRIMARY KEY CLUSTERED,
   [LocusDescriptionEarthID] UNIQUEIDENTIFIER  NOT NULL
-    FOREIGN KEY ([LocusDescriptionEarthID]) REFERENCES [LocusDescriptionEarth]([ID]),
+    FOREIGN KEY ([LocusDescriptionEarthID]) REFERENCES [tblLocusDescriptionEarth]([ID]),
   [EarthParticleShapeID]    TINYINT           NOT NULL  DEFAULT ((0))
     CONSTRAINT [UQ_LocusDescriptionEarthParticleShape_LocusDescriptionEarthID_EarthParticleShapeID]
       UNIQUE([LocusDescriptionEarthID], [EarthParticleShapeID])
-    FOREIGN KEY ([EarthParticleShapeID]) REFERENCES [LstEarthParticleShape]([ID]),
+    FOREIGN KEY ([EarthParticleShapeID]) REFERENCES [tblLstEarthParticleShape]([ID]),
   [Percentage]              TINYINT           NOT NULL  DEFAULT ((0)),
   [Remarks]                 NVARCHAR(250)     NOT NULL  DEFAULT ('')
 )
 
-CREATE TABLE dbo.[LocusDescriptionEarthInclusionsStone] (
+CREATE TABLE dbo.[tblLocusDescriptionEarthInclusionsStone] (
   [ID]                      UNIQUEIDENTIFIER  NOT NULL  DEFAULT NEWID() PRIMARY KEY CLUSTERED,
   [LocusDescriptionEarthID] UNIQUEIDENTIFIER  NOT NULL
-    FOREIGN KEY ([LocusDescriptionEarthID]) REFERENCES [LocusDescriptionEarth]([ID]),
+    FOREIGN KEY ([LocusDescriptionEarthID]) REFERENCES [tblLocusDescriptionEarth]([ID]),
   [EarthInclusionsStoneID]  TINYINT           NOT NULL  DEFAULT ((0))
     CONSTRAINT [UQ_LocusDescriptionEarthInclusionsStone_LocusDescriptionEarthID_EarthInclusionsStoneID]
       UNIQUE([LocusDescriptionEarthID], [EarthInclusionsStoneID])
-    FOREIGN KEY ([EarthInclusionsStoneID]) REFERENCES [LstEarthInclusionsStone]([ID]),
+    FOREIGN KEY ([EarthInclusionsStoneID]) REFERENCES [tblLstEarthInclusionsStone]([ID]),
   [Remarks]                 NVARCHAR(250)     NOT NULL DEFAULT ('')
 )
 
-CREATE TABLE dbo.[LocusDescriptionEarthInclusionsEarth] (
+CREATE TABLE dbo.[tblLocusDescriptionEarthInclusionsEarth] (
   [ID]                      UNIQUEIDENTIFIER  NOT NULL  DEFAULT NEWID() PRIMARY KEY CLUSTERED,
   [LocusDescriptionEarthID] UNIQUEIDENTIFIER  NOT NULL
-    FOREIGN KEY ([LocusDescriptionEarthID]) REFERENCES [LocusDescriptionEarth]([ID]),
+    FOREIGN KEY ([LocusDescriptionEarthID]) REFERENCES [tblLocusDescriptionEarth]([ID]),
   [EarthInclusionsEarthID]  TINYINT           NOT NULL  DEFAULT ((0))
     CONSTRAINT [UQ_LocusDescriptionEarthInclusionsEarth_LocusDescriptionEarthID_EarthInclusionsEarthID]
       UNIQUE([LocusDescriptionEarthID], [EarthInclusionsEarthID])
-    FOREIGN KEY ([EarthInclusionsEarthID]) REFERENCES [LstEarthInclusionsEarth]([ID]),
+    FOREIGN KEY ([EarthInclusionsEarthID]) REFERENCES [tblLstEarthInclusionsEarth]([ID]),
   [Remarks]                 NVARCHAR(250)     NOT NULL  DEFAULT ('')
 )
 
-CREATE TABLE dbo.[LocusDescriptionEarthInclusionsArtifact] (
+CREATE TABLE dbo.[tblLocusDescriptionEarthInclusionsArtifact] (
   [ID]                        UNIQUEIDENTIFIER  NOT NULL  DEFAULT NEWID() PRIMARY KEY CLUSTERED,
   [LocusDescriptionEarthID]   UNIQUEIDENTIFIER  NOT NULL
-    FOREIGN KEY ([LocusDescriptionEarthID]) REFERENCES [LocusDescriptionEarth]([ID]),
+    FOREIGN KEY ([LocusDescriptionEarthID]) REFERENCES [tblLocusDescriptionEarth]([ID]),
   [EarthInclusionsArtifactID] TINYINT           NOT NULL  DEFAULT ((0))
     CONSTRAINT [UQ_LocusDescriptionEarthInclusionsArtifact_LocusDescriptionEarthID_EarthInclusionsArtifactID]
       UNIQUE([LocusDescriptionEarthID], [EarthInclusionsArtifactID])
-    FOREIGN KEY ([EarthInclusionsArtifactID]) REFERENCES [LstEarthInclusionsArtifact]([ID]),
+    FOREIGN KEY ([EarthInclusionsArtifactID]) REFERENCES [tblLstEarthInclusionsArtifact]([ID]),
   [Remarks]                   NVARCHAR(250)     NOT NULL DEFAULT ('')
 )
 
-CREATE TABLE dbo.[LocusDescriptionEarthInclusionsOrganic] (
+CREATE TABLE dbo.[tblLocusDescriptionEarthInclusionsOrganic] (
   [ID]                        UNIQUEIDENTIFIER  NOT NULL  DEFAULT NEWID() PRIMARY KEY CLUSTERED,
   [LocusDescriptionEarthID]   UNIQUEIDENTIFIER  NOT NULL
-    FOREIGN KEY ([LocusDescriptionEarthID]) REFERENCES [LocusDescriptionEarth]([ID]),
+    FOREIGN KEY ([LocusDescriptionEarthID]) REFERENCES [tblLocusDescriptionEarth]([ID]),
   [EarthInclusionsOrganicID]  TINYINT           NOT NULL  DEFAULT ((0))
     CONSTRAINT [UQ_LocusDescriptionEarthInclusionsOrganic_LocusDescriptionEarthID_EarthInclusionsOrganicID]
       UNIQUE([LocusDescriptionEarthID], [EarthInclusionsOrganicID])
-    FOREIGN KEY ([EarthInclusionsOrganicID]) REFERENCES [LstEarthInclusionsOrganic]([ID]),
+    FOREIGN KEY ([EarthInclusionsOrganicID]) REFERENCES [tblLstEarthInclusionsOrganic]([ID]),
   [Remarks]                   NVARCHAR(250)     NOT NULL  DEFAULT ('')
 )
 
-CREATE TABLE dbo.[LocusDescriptionInstallation] (
+CREATE TABLE dbo.[tblLocusDescriptionInstallation] (
   [ID]      UNIQUEIDENTIFIER  NOT NULL  DEFAULT NEWID() PRIMARY KEY CLUSTERED,
   [LocusID] UNIQUEIDENTIFIER  NOT NULL
     CONSTRAINT [UQ_LocusDescriptionInstallation_LocusID] UNIQUE([LocusID])
-    FOREIGN KEY ([LocusID]) REFERENCES [Locus]([ID]),
+    FOREIGN KEY ([LocusID]) REFERENCES [tblLocus]([ID]),
   [InstallationTypeID] TINYINT NOT NULL DEFAULT ((0))
-    FOREIGN KEY ([InstallationTypeID]) REFERENCES [LstInstallationType]([ID]),
+    FOREIGN KEY ([InstallationTypeID]) REFERENCES [tblLstInstallationType]([ID]),
   [InstallationTypeCertaintyID] TINYINT NOT NULL DEFAULT ((0))
-    FOREIGN KEY ([InstallationTypeCertaintyID]) REFERENCES [LstInstallationTypeCertainty]([ID]),
+    FOREIGN KEY ([InstallationTypeCertaintyID]) REFERENCES [tblLstInstallationTypeCertainty]([ID]),
   [InstallationPlanID] TINYINT NOT NULL DEFAULT ((0))
-    FOREIGN KEY ([InstallationPlanID]) REFERENCES [LstInstallationPlan]([ID]),
+    FOREIGN KEY ([InstallationPlanID]) REFERENCES [tblLstInstallationPlan]([ID]),
   [InstallationPlanQualifierID] TINYINT NOT NULL DEFAULT ((0))
-    FOREIGN KEY ([InstallationPlanQualifierID]) REFERENCES [LstInstallationPlanQualifier]([ID]),
+    FOREIGN KEY ([InstallationPlanQualifierID]) REFERENCES [tblLstInstallationPlanQualifier]([ID]),
   [ToolingWidth]                        DECIMAL(4,3)      NOT NULL  DEFAULT ((0.000)),
   [ToolingLength]                       DECIMAL(4,3)      NOT NULL  DEFAULT ((0.000)),
   [ToolingDepth]                        DECIMAL(4,3)      NOT NULL  DEFAULT ((0.000)),
   [ToolingPhoto]                        BIT               NOT NULL  DEFAULT ((0)),
   [ArchitecturalConstructionStyleID]    TINYINT           NOT NULL  DEFAULT ((0))
-    FOREIGN KEY ([ArchitecturalConstructionStyleID]) REFERENCES [LstArchitecturalConstructionStyle]([ID]),
+    FOREIGN KEY ([ArchitecturalConstructionStyleID]) REFERENCES [tblLstArchitecturalConstructionStyle]([ID]),
   [ArchitecturalConstructionSupportID]  TINYINT           NOT NULL  DEFAULT ((0))
-    FOREIGN KEY ([ArchitecturalConstructionSupportID]) REFERENCES [LstArchitecturalConstructionSupport]([ID]),
+    FOREIGN KEY ([ArchitecturalConstructionSupportID]) REFERENCES [tblLstArchitecturalConstructionSupport]([ID]),
   [ArchitecturalRemarks]                NVARCHAR(250)     NOT NULL  DEFAULT (''),
   [ArthitecturalTendencies]             NVARCHAR(250)     NOT NULL  DEFAULT (''),
   [CoursesMinimum]                      TINYINT           NOT NULL  DEFAULT ((0)),
@@ -1157,30 +1157,30 @@ CREATE TABLE dbo.[LocusDescriptionInstallation] (
   [Remarks]                             NVARCHAR(1000)    NOT NULL  DEFAULT ('')
 )
 
-CREATE TABLE dbo.[LocusDescriptionInstallationMaterial] (
+CREATE TABLE dbo.[tblLocusDescriptionInstallationMaterial] (
   [ID]                                UNIQUEIDENTIFIER  NOT NULL  DEFAULT NEWID() PRIMARY KEY CLUSTERED,
   [LocusDescriptionInstallationID]    UNIQUEIDENTIFIER  NOT NULL
-    FOREIGN KEY ([LocusDescriptionInstallationID]) REFERENCES [LocusDescriptionInstallation]([ID]),
+    FOREIGN KEY ([LocusDescriptionInstallationID]) REFERENCES [tblLocusDescriptionInstallation]([ID]),
   [ArchitecturalMaterialID]           TINYINT           NOT NULL  DEFAULT ((0))
     CONSTRAINT [UQ_LocusDescriptionInstallationMaterial_LocusDescriptionInstallationID_ArchitecturalMaterialID]
       UNIQUE([LocusDescriptionInstallationID], [ArchitecturalMaterialID])
-    FOREIGN KEY ([ArchitecturalMaterialID]) REFERENCES [LstArchitecturalMaterial]([ID]),
+    FOREIGN KEY ([ArchitecturalMaterialID]) REFERENCES [tblLstArchitecturalMaterial]([ID]),
   [ArchitecturalMaterialQualifierID]  TINYINT           NOT NULL  DEFAULT ((0))
-    FOREIGN KEY ([ArchitecturalMaterialQualifierID]) REFERENCES [LstArchitecturalMaterialQualifier]([ID]),
+    FOREIGN KEY ([ArchitecturalMaterialQualifierID]) REFERENCES [tblLstArchitecturalMaterialQualifier]([ID]),
   [Percentage]                        TINYINT           NOT NULL  DEFAULT ((0)),
   [Remarks]                           NVARCHAR(250)     NOT NULL  DEFAULT ('')
 )
 
-CREATE TABLE dbo.[LocusDescriptionInstallationMasonry] (
+CREATE TABLE dbo.[tblLocusDescriptionInstallationMasonry] (
   [ID]                              UNIQUEIDENTIFIER  NOT NULL  DEFAULT NEWID() PRIMARY KEY CLUSTERED,
   [LocusDescriptionInstallationID]  UNIQUEIDENTIFIER  NOT NULL
-    FOREIGN KEY ([LocusDescriptionInstallationID]) REFERENCES [LocusDescriptionInstallation]([ID]),
+    FOREIGN KEY ([LocusDescriptionInstallationID]) REFERENCES [tblLocusDescriptionInstallation]([ID]),
   [ArchitecturalMasonryID]          TINYINT           NOT NULL  DEFAULT ((0))
-    FOREIGN KEY ([ArchitecturalMasonryID]) REFERENCES [LstArchitecturalMasonry]([ID]),
+    FOREIGN KEY ([ArchitecturalMasonryID]) REFERENCES [tblLstArchitecturalMasonry]([ID]),
   [ArchitecturalMasonryStonesID]    TINYINT           NOT NULL  DEFAULT ((0))
     CONSTRAINT [UQ_LocusDescriptionInstallationMasonry_LocusDescriptionInstallationID_ArchitecturalMasonryID]
       UNIQUE([LocusDescriptionInstallationID], [ArchitecturalMasonryID], [ArchitecturalMasonryStonesID])
-    FOREIGN KEY ([ArchitecturalMasonryStonesID]) REFERENCES [LstArchitecturalMasonryStones]([ID]),
+    FOREIGN KEY ([ArchitecturalMasonryStonesID]) REFERENCES [tblLstArchitecturalMasonryStones]([ID]),
   [BrickLengthMinimum]              DECIMAL(4,3)      NOT NULL  DEFAULT ((0.000)),
   [BrickLengthMaximum]              DECIMAL(4,3)      NOT NULL  DEFAULT ((0.000)),
   [BrickWidthMinimum]               DECIMAL(4,3)      NOT NULL  DEFAULT ((0.000)),
@@ -1191,43 +1191,43 @@ CREATE TABLE dbo.[LocusDescriptionInstallationMasonry] (
   [Remarks]                         NVARCHAR(250)     NOT NULL  DEFAULT ('')
 )
 
-CREATE TABLE dbo.[LocusDescriptionInstallationDressing] (
+CREATE TABLE dbo.[tblLocusDescriptionInstallationDressing] (
   [ID]                              UNIQUEIDENTIFIER  NOT NULL  DEFAULT NEWID() PRIMARY KEY CLUSTERED,
   [LocusDescriptionInstallationID]  UNIQUEIDENTIFIER  NOT NULL
-    FOREIGN KEY ([LocusDescriptionInstallationID]) REFERENCES [LocusDescriptionInstallation]([ID]),
+    FOREIGN KEY ([LocusDescriptionInstallationID]) REFERENCES [tblLocusDescriptionInstallation]([ID]),
   [ArchitecturalDressingID]         TINYINT           NOT NULL  DEFAULT ((0))
     CONSTRAINT [UQ_LocusDescriptionInstallationMaterial_LocusDescriptionInstallationID_ArchitecturalDressingID]
       UNIQUE([LocusDescriptionInstallationID], [ArchitecturalDressingID])
-    FOREIGN KEY ([ArchitecturalDressingID]) REFERENCES [LstArchitecturalDressing]([ID]),
+    FOREIGN KEY ([ArchitecturalDressingID]) REFERENCES [tblLstArchitecturalDressing]([ID]),
   [Percentage]                      TINYINT           NOT NULL  DEFAULT ((0)),
   [Remarks]                         NVARCHAR(250)     NOT NULL  DEFAULT ('')
 )
 
-CREATE TABLE dbo.[LocusDescriptionInstallationMortar] (
+CREATE TABLE dbo.[tblLocusDescriptionInstallationMortar] (
   [ID]                              UNIQUEIDENTIFIER  NOT NULL  DEFAULT NEWID() PRIMARY KEY CLUSTERED,
   [LocusDescriptionInstallationID]  UNIQUEIDENTIFIER  NOT NULL
-    FOREIGN KEY ([LocusDescriptionInstallationID]) REFERENCES [LocusDescriptionInstallation]([ID]),
+    FOREIGN KEY ([LocusDescriptionInstallationID]) REFERENCES [tblLocusDescriptionInstallation]([ID]),
   [ArchitecturalMortarID]           TINYINT           NOT NULL  DEFAULT ((0))
     CONSTRAINT [UQ_LocusDescriptionInstallationMaterial_LocusDescriptionInstallationID_ArchitecturalMortarID]
       UNIQUE([LocusDescriptionInstallationID], [ArchitecturalMortarID])
-    FOREIGN KEY ([ArchitecturalMortarID]) REFERENCES [LstArchitecturalMortar]([ID]),
+    FOREIGN KEY ([ArchitecturalMortarID]) REFERENCES [tblLstArchitecturalMortar]([ID]),
   [Percentage]                      TINYINT           NOT NULL  DEFAULT ((0)),
   [Remarks]                         NVARCHAR(250)     NOT NULL  DEFAULT ('')
 )
 
-CREATE TABLE dbo.[LocusDescriptionInstallationFacing] (
+CREATE TABLE dbo.[tblLocusDescriptionInstallationFacing] (
   [ID]                              UNIQUEIDENTIFIER  NOT NULL  DEFAULT NEWID() PRIMARY KEY CLUSTERED,
   [LocusDescriptionInstallationID]  UNIQUEIDENTIFIER  NOT NULL
-    FOREIGN KEY ([LocusDescriptionInstallationID]) REFERENCES [LocusDescriptionInstallation]([ID]),
+    FOREIGN KEY ([LocusDescriptionInstallationID]) REFERENCES [tblLocusDescriptionInstallation]([ID]),
   [ArchitecturalFacingID]           TINYINT           NOT NULL  DEFAULT ((0))
     CONSTRAINT [UQ_LocusDescriptionInstallationMaterial_LocusDescriptionInstallationID_ArchitecturalFacingID]
       UNIQUE([LocusDescriptionInstallationID], [ArchitecturalFacingID])
-    FOREIGN KEY ([ArchitecturalFacingID]) REFERENCES [LstArchitecturalFacing]([ID]),
+    FOREIGN KEY ([ArchitecturalFacingID]) REFERENCES [tblLstArchitecturalFacing]([ID]),
   [Percentage]                      TINYINT           NOT NULL  DEFAULT ((0)),
   [Remarks]                         NVARCHAR(250)     NOT NULL  DEFAULT ('')
 )
 
-CREATE TABLE dbo.[GeospatialData] (
+CREATE TABLE dbo.[tblGeospatialData] (
   [ID]        UNIQUEIDENTIFIER  NOT NULL  DEFAULT NEWID() PRIMARY KEY CLUSTERED,
   [Number]    INTEGER           NOT NULL
     CONSTRAINT [UQ_GeospatialPoints_Number] UNIQUE([Number]),
@@ -1236,36 +1236,36 @@ CREATE TABLE dbo.[GeospatialData] (
   [Northing]  DECIMAL(20,10)    NULL
 )
 
-CREATE TABLE dbo.[LocusGeospatialDefinition] (
+CREATE TABLE dbo.[tblLocusGeospatialDefinition] (
   [GeospatialDataID]  UNIQUEIDENTIFIER  NOT NULL  DEFAULT NEWID() PRIMARY KEY CLUSTERED
-    FOREIGN KEY ([GeospatialDataID]) REFERENCES [GeospatialData]([ID]),
+    FOREIGN KEY ([GeospatialDataID]) REFERENCES [tblGeospatialData]([ID]),
   [Top]               BIT               NOT NULL  DEFAULT ((0)),
   [Bottom]            BIT               NOT NULL  DEFAULT ((0)),
   [Edge]              BIT               NOT NULL  DEFAULT ((0)),
   [Reference]         BIT               NOT NULL  DEFAULT ((0))
 )
 
-CREATE TABLE dbo.[AscLocusStratigraphy] (
+CREATE TABLE dbo.[tblAscLocusStratigraphy] (
   [ID]                          UNIQUEIDENTIFIER  NOT NULL  DEFAULT NEWID() PRIMARY KEY CLUSTERED,
   [CurrentLocusID]              UNIQUEIDENTIFIER  NOT NULL
-    FOREIGN KEY ([CurrentLocusID]) REFERENCES [Locus]([ID]),
+    FOREIGN KEY ([CurrentLocusID]) REFERENCES [tblLocus]([ID]),
   [StratigraphicRelationshipID] TINYINT           NOT NULL  DEFAULT ((0))
-    FOREIGN KEY ([StratigraphicRelationshipID]) REFERENCES [LstStratigraphicRelationship]([ID]),
+    FOREIGN KEY ([StratigraphicRelationshipID]) REFERENCES [tblLstStratigraphicRelationship]([ID]),
   [RelatedLocusID]              UNIQUEIDENTIFIER  NOT NULL
     CONSTRAINT [UQ_AscLocusStratigraphy_CurrentLocusID_RelatedLocusID]
       UNIQUE ([CurrentLocusID], [RelatedLocusID])
-    FOREIGN KEY ([RelatedLocusID]) REFERENCES [Locus]([ID]),
+    FOREIGN KEY ([RelatedLocusID]) REFERENCES [tblLocus]([ID]),
   [Remarks]                     NVARCHAR(250)     NOT NULL  DEFAULT ('')
 )
 
-CREATE TABLE dbo.[PotteryBucket] (
+CREATE TABLE dbo.[tblPotteryBucket] (
   [ID]                UNIQUEIDENTIFIER  NOT NULL  DEFAULT NEWID() PRIMARY KEY CLUSTERED,
   [LocusID]           UNIQUEIDENTIFIER  NOT NULL
-    FOREIGN KEY ([LocusID]) REFERENCES [Locus]([ID]),
+    FOREIGN KEY ([LocusID]) REFERENCES [tblLocus]([ID]),
   [Number]            INTEGER           NOT NULL  DEFAULT ((0)),
   [DateFilled]        DATE              NOT NULL  DEFAULT GETDATE(),
   [GeospatialDataID]  UNIQUEIDENTIFIER  NULL
-    FOREIGN KEY ([GeospatialDataID]) REFERENCES [GeospatialData]([ID]),
+    FOREIGN KEY ([GeospatialDataID]) REFERENCES [tblGeospatialData]([ID]),
   [CountTotal]        INTEGER           NOT NULL  DEFAULT ((0)),
   [CountRims]         INTEGER           NOT NULL  DEFAULT ((0)),
   [CountHandles]      INTEGER           NOT NULL  DEFAULT ((0)),
@@ -1274,14 +1274,14 @@ CREATE TABLE dbo.[PotteryBucket] (
   [Remarks]           NVARCHAR(250)     NOT NULL  DEFAULT ('')
 )
 
-CREATE TABLE dbo.[Object] (
+CREATE TABLE dbo.[tblObject] (
   [ID]                UNIQUEIDENTIFIER  NOT NULL  DEFAULT NEWID() PRIMARY KEY CLUSTERED,
   [LocusID]           UNIQUEIDENTIFIER  NOT NULL
-    FOREIGN KEY ([LocusID]) REFERENCES [Locus]([ID]),
+    FOREIGN KEY ([LocusID]) REFERENCES [tblLocus]([ID]),
   [Number]            INTEGER           NOT NULL  DEFAULT ((0)),
   [DateCollected]     DATE              NOT NULL  DEFAULT GETDATE(),
   [GeospatialDataID]  UNIQUEIDENTIFIER  NULL
-    FOREIGN KEY ([GeospatialDataID]) REFERENCES [GeospatialData]([ID]),
+    FOREIGN KEY ([GeospatialDataID]) REFERENCES [tblGeospatialData]([ID]),
   [CountTotal]        INTEGER           NOT NULL  DEFAULT ((1)),
   [LeftInField]       BIT               NOT NULL  DEFAULT ((0)),
   [Remarks]           NVARCHAR(250)     NOT NULL  DEFAULT ('')
