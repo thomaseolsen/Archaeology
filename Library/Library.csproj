@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="geoapi" Version="1.7.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="3.1.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.netTopologySuite" Version="3.1.5" />
@@ -14,6 +15,7 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.XmlSerializer.Generator" Version="2.2.1" />
+    <DotNetCliToolReference Include="Microsoft.XmlSerializer.Generator" Version="2.2.1" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
 

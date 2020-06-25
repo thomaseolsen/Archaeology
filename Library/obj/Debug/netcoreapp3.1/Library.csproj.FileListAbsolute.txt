@@ -1,0 +1,13 @@
+/Users/to369r/Documents/GitHub/Archaeology/Library/obj/Debug/netcoreapp3.1/Library.csprojAssemblyReference.cache
+/Users/to369r/Documents/GitHub/Archaeology/Library/obj/Debug/netcoreapp3.1/Library.AssemblyInfoInputs.cache
+/Users/to369r/Documents/GitHub/Archaeology/Library/obj/Debug/netcoreapp3.1/Library.AssemblyInfo.cs
+/Users/to369r/Documents/GitHub/Archaeology/Library/obj/Debug/netcoreapp3.1/Library.csproj.CoreCompileInputs.cache
+/Users/to369r/Documents/GitHub/Archaeology/Library/obj/Debug/netcoreapp3.1/EFCoreSqlServerNetTopologySuite.cs
+/Users/to369r/Documents/GitHub/Archaeology/Library/bin/Debug/netcoreapp3.1/Library.deps.json
+/Users/to369r/Documents/GitHub/Archaeology/Library/bin/Debug/netcoreapp3.1/Library.runtimeconfig.json
+/Users/to369r/Documents/GitHub/Archaeology/Library/bin/Debug/netcoreapp3.1/Library.runtimeconfig.dev.json
+/Users/to369r/Documents/GitHub/Archaeology/Library/bin/Debug/netcoreapp3.1/Library.dll
+/Users/to369r/Documents/GitHub/Archaeology/Library/bin/Debug/netcoreapp3.1/Library.pdb
+/Users/to369r/Documents/GitHub/Archaeology/Library/obj/Debug/netcoreapp3.1/Library.dll
+/Users/to369r/Documents/GitHub/Archaeology/Library/obj/Debug/netcoreapp3.1/Library.pdb
+/Users/to369r/Documents/GitHub/Archaeology/Library/obj/Debug/netcoreapp3.1/Library.genruntimeconfig.cache

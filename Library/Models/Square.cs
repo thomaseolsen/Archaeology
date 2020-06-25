@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using GeoAPI.Geometries;
 
-namespace NotebookLibrary.Models
+namespace Library.Models
 {
     public partial class Square
     {

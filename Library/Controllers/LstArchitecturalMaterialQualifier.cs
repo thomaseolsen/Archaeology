@@ -1,10 +1,9 @@
-using NotebookLibrary.Models;
-using NotebookLibrary.Models;
+using Library.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace NotebookLibrary.Controllers
+namespace Library.Controllers
 {
   public class LstArchitecturalMaterialQualifierController
   {
