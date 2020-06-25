@@ -1,2 +1,3 @@
+#!/bin/sh
 docker pull admiralawkbar/super-linter:latest
-docker run -e RUN_LOCAL=true -v $PWD:/tmp/lint admiralawkbar/super-linter
+docker run -e RUN_LOCAL=true -v "$PWD":/tmp/lint admiralawkbar/super-linter
