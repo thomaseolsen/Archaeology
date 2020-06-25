@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace NotebookLibrary.Models
+namespace Library.Models
 {
     public partial class ArchaeologyContext : DbContext
     {

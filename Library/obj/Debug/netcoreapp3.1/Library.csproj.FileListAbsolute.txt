@@ -1,0 +1,5 @@
+/Users/to369r/Documents/GitHub/Archaeology/Library/obj/Debug/netcoreapp3.1/Library.csprojAssemblyReference.cache
+/Users/to369r/Documents/GitHub/Archaeology/Library/obj/Debug/netcoreapp3.1/Library.AssemblyInfoInputs.cache
+/Users/to369r/Documents/GitHub/Archaeology/Library/obj/Debug/netcoreapp3.1/Library.AssemblyInfo.cs
+/Users/to369r/Documents/GitHub/Archaeology/Library/obj/Debug/netcoreapp3.1/Library.csproj.CoreCompileInputs.cache
+/Users/to369r/Documents/GitHub/Archaeology/Library/obj/Debug/netcoreapp3.1/EFCoreSqlServerNetTopologySuite.cs

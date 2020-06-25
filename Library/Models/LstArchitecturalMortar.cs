@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace NotebookLibrary.Models
+namespace Library.Models
 {
     public partial class LstArchitecturalMortar
     {
