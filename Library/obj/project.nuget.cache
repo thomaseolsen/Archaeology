@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "SWKDZxO/QomO3/9nmOEkRWhP+2uFMbVSjplabgt0KKnopeHUn9fxmqga81szVAEswqkh0BYdlOCTxnDsxfIaOw==",
+  "dgSpecHash": "vRuuvn4Eib/ZEO6Ru7bo/UfYDjh8CM554P2TpNXcPVBT4MSXB3a21XuPh8qSJHRqVIwlsULEv/1jLuqXE+1/3g==",
   "success": true,
   "projectFilePath": "/Users/to369r/Documents/GitHub/Archaeology/Library/Library.csproj",
   "expectedPackageFiles": [
     "/Users/to369r/.nuget/packages/castle.core/4.4.0/castle.core.4.4.0.nupkg.sha512",
+    "/Users/to369r/.nuget/packages/geoapi/1.7.5/geoapi.1.7.5.nupkg.sha512",
+    "/Users/to369r/.nuget/packages/geoapi.coordinatesystems/1.7.5/geoapi.coordinatesystems.1.7.5.nupkg.sha512",
+    "/Users/to369r/.nuget/packages/geoapi.core/1.7.5/geoapi.core.1.7.5.nupkg.sha512",
     "/Users/to369r/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/Users/to369r/.nuget/packages/microsoft.bcl.hashcode/1.1.0/microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "/Users/to369r/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
