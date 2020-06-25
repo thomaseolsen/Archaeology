@@ -1,2 +1,3 @@
+obj/Debug/*
 Library/bin/*
-Library/obj/*
+Library/obj/Debug/*
